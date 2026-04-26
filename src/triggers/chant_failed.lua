@@ -1,2 +1,2 @@
 if not ZevDash then return end
-ZevDash.chant_success = false
+ZevDash._chant_gen = (ZevDash._chant_gen or 0) + 1

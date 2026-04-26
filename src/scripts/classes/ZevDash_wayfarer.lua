@@ -9,7 +9,8 @@ ZevDash.toggleChant = function(chantName)
     local toggle_key = "chant_" .. chantName
     local wasOn = ZevDash.class_toggles[toggle_key] or false
 
-    ZevDash.chant_success = true
+    ZevDash._chant_gen = (ZevDash._chant_gen or 0) + 1
+    local gen = ZevDash._chant_gen
 
     if wasOn then
         -- User wants to turn it OFF
@@ -21,7 +22,7 @@ ZevDash.toggleChant = function(chantName)
         end
 
         tempTimer(getNetworkLatency() + 0.1, [[
-            if ZevDash.chant_success then
+            if ZevDash._chant_gen == ]] .. gen .. [[ then
                 ZevDash.class_toggles["]] .. toggle_key .. [["] = false
                 if ZevDash.displayPage then ZevDash.displayPage("class") end
             end
@@ -36,7 +37,7 @@ ZevDash.toggleChant = function(chantName)
         end
 
         tempTimer(getNetworkLatency() + 0.1, [[
-            if ZevDash.chant_success then
+            if ZevDash._chant_gen == ]] .. gen .. [[ then
                 local chants = {"chant_anthem", "chant_bolster", "chant_rally", "chant_phalanx"}
                 for _, c in ipairs(chants) do
                     ZevDash.class_toggles[c] = false
