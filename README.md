@@ -1,6 +1,6 @@
 # Sunder Dashboard
 
-![Version](https://img.shields.io/badge/version-1.0.1-blue)
+![Version](https://img.shields.io/badge/version-1.0.3-blue)
 ![Dependency](https://img.shields.io/badge/dependency-Sunder-green)
 ![Platform](https://img.shields.io/badge/platform-Mudlet-maroon)
 
