@@ -20,6 +20,11 @@
         "isFolder": "no"
     },
     {
+        "name": "ZevDash_Wayfarer_AxeTrack",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
         "name": "ZevDash_akkari",
         "isActive": "yes",
         "isFolder": "no"

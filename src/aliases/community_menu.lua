@@ -1,7 +1,7 @@
 local arg = matches[2]
 
 if not arg or arg == "" then
-    ZevDash.toggle()
+    ZevDash.show()
 elseif arg:find("^help") then
     local topic = arg:match("^help%s*(.*)$")
     if ZevDash and ZevDash.showHelp then
@@ -9,6 +9,8 @@ elseif arg:find("^help") then
     else
         cecho("\n<red>ZevDash: Help module not loaded.<reset>\n")
     end
+elseif arg == "close" then
+    ZevDash.hide()
 elseif arg == "reset" then
     if ZevDash.window then
         ZevDash.window:move(10, 10)

@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Wayfarer Axe Track",
+        "isActive": "yes",
+        "isFolder": "yes",
+        "children": [
+            {
+                "name": "axe_caught",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_caught.lua",
+                "patterns": [
+                    { "pattern": "^You catch your returning handaxe\\.$", "type": "regex" },
+                    { "pattern": "^You catch your flying axe with your (left|right) hand\\.$", "type": "regex" },
+                    { "pattern": "^[Yy]ou deftly catch", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_thrown_single",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_thrown_single.lua",
+                "patterns": [
+                    { "pattern": "^[Yy]ou flick your wrist and fling your handaxe", "type": "regex" },
+                    { "pattern": "^[Yy]ou hurl your axe", "type": "regex" },
+                    { "pattern": "^[Yy]ou fling your axe", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_thrown_double",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_thrown_double.lua",
+                "patterns": [
+                    { "pattern": "^You make a devastating thrown strike with both handaxes.*$", "type": "regex" },
+                    { "pattern": "^Throwing your axes in a precise, savage pattern", "type": "regex" },
+                    { "pattern": "^[Yy]ou carve a bloody path through .* with your handaxes", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_embedded",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_embedded.lua",
+                "patterns": [
+                    { "pattern": "^Spotting an opportune moment, you embed your handaxe into.*$", "type": "regex" },
+                    { "pattern": "finds purchase within.*vulnerable flesh", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_fumbled",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_fumbled.lua",
+                "patterns": [
+                    { "pattern": "^[Yy]our handaxe strikes you in the head as you fail to catch it\\.$", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_pulled",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_pulled.lua",
+                "patterns": [
+                    { "pattern": "^You wrench your handaxe out of .*\\.$", "type": "regex" },
+                    { "pattern": "^\\w+ wrenches your (?:handaxe|tomahawk|axe) out of .*\\.$", "type": "regex" },
+                    { "pattern": "^Your (?:handaxe|tomahawk|axe) falls to the ground.*$", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_secured",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_secured.lua",
+                "patterns": [
+                    { "pattern": "^You (?:slip|slide|attach) your (?:handaxe|tomahawk|axe) (?:into|to) .* weaponbelt\\.$", "type": "regex" }
+                ]
+            },
+            {
+                "name": "axe_wielded",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_wielded.lua",
+                "patterns": [
+                    { "pattern": "^You (?:quickly draw|remove) your (?:handaxe|tomahawk|axe) from .* weaponbelt\\.$", "type": "regex" }
+                ]
+            }
+        ]
+    }
+]
