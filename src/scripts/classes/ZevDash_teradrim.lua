@@ -16,15 +16,12 @@ ZevDash.ClassModules["teradrim"] = {
         { id = "sand swelter", name = "Swelter" },
         { id = "sand projection", name = "Projection" },
     },
-    resources = {
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>TERADRIM DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        mc:cecho("  <gray>No special resources to track.<reset>\n")
+        -- Action Tracking
 
         
         -- Action Tracking

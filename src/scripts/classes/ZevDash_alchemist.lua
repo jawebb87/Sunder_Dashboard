@@ -14,18 +14,10 @@ ZevDash.ClassModules["alchemist"] = {
         { id = "botany distractions", name = "Distractions" },
         { id = "botany blightbringer", name = "Blightbringer" },
     },
-    resources = {
-        "volatility",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>ALCHEMIST DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
-        
-        -- Resources
-        local volatility_val = (snd and snd.charstats and snd.charstats.volatility) or "0"
-        mc:cecho("  <yellow>Volatility:<reset> " .. volatility_val .. "\n")
-
         
         -- Action Tracking
 

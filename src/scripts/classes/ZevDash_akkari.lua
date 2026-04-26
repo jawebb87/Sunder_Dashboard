@@ -12,18 +12,10 @@ ZevDash.ClassModules["akkari"] = {
         { id = "telesense", name = "Telesense" },
         { id = "spirit oneness", name = "Oneness" },
     },
-    resources = {
-        "blood",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>AKKARI DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
-        
-        -- Resources
-        local blood_val = (snd and snd.charstats and snd.charstats.blood) or "0"
-        mc:cecho("  <yellow>Blood:<reset> " .. blood_val .. "\n")
-
         
         -- Action Tracking
 

@@ -10,23 +10,12 @@ ZevDash.ClassModules["earthcaller"] = {
     },
     toggles = {
     },
-    resources = {
-        "fragments",
-        "fervour",
-        "impurities",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>EARTHCALLER DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local fragments_val = (snd and snd.charstats and snd.charstats.fragments) or "0"
-        mc:cecho("  <yellow>Fragments:<reset> " .. fragments_val .. "\n")
-        local fervour_val = (snd and snd.charstats and snd.charstats.fervour) or "0"
-        mc:cecho("  <yellow>Fervour:<reset> " .. fervour_val .. "\n")
-        local impurities_val = (snd and snd.charstats and snd.charstats.impurities) or "0"
-        mc:cecho("  <yellow>Impurities:<reset> " .. impurities_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking

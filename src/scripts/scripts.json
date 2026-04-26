@@ -12,6 +12,12 @@
         "scriptPath": "src/scripts/ZevDash_Custom_Config.lua"
     },
     {
+        "name": "ZevDash_GetResource",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/ZevDash_GetResource.lua"
+    },
+    {
         "name": "ZevDash",
         "isActive": "yes",
         "isFolder": "no"

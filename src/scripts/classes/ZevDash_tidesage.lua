@@ -17,15 +17,12 @@ ZevDash.ClassModules["tidesage"] = {
         { id = "fog sirensong", name = "Sirensong" },
         { id = "fog panoptic", name = "Panoptic" },
     },
-    resources = {
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>TIDESAGE DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        mc:cecho("  <gray>No special resources to track.<reset>\n")
+        -- Action Tracking
 
         
         -- Action Tracking

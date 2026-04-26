@@ -15,26 +15,12 @@ ZevDash.ClassModules["bloodborn"] = {
         { id = "well atrophy",   name = "Atrophy" },
         { id = "well thrombose", name = "Thrombose" },
     },
-    resources = {
-        "humour",
-        "phlegm",
-        "black",
-        "blood",
-    },
 
     renderInfo = function(mc)
         mc:cecho("\n <white><u>BLOODBORN DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
 
-        -- Resources
-        local humour_val = (snd and snd.charstats and snd.charstats.humour) or "0"
-        mc:cecho("  <yellow>Humour:<reset> " .. humour_val .. "\n")
-        local phlegm_val = (snd and snd.charstats and snd.charstats.phlegm) or "0"
-        mc:cecho("  <yellow>Phlegm:<reset> " .. phlegm_val .. "\n")
-        local black_val = (snd and snd.charstats and snd.charstats.black) or "0"
-        mc:cecho("  <yellow>Black:<reset> " .. black_val .. "\n")
-        local blood_val = (snd and snd.charstats and snd.charstats.blood) or "0"
-        mc:cecho("  <yellow>Blood):<reset> " .. blood_val .. "\n")
+        -- Action Tracking
 
 
         -- Action Tracking

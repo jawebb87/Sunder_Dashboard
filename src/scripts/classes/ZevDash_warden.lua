@@ -14,15 +14,12 @@ ZevDash.ClassModules["warden"] = {
         { id = "simul flank", name = "Flank" },
         { id = "simul openings", name = "Openings" },
     },
-    resources = {
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>WARDEN DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        mc:cecho("  <gray>No special resources to track.<reset>\n")
+        -- Action Tracking
 
         
         -- Action Tracking

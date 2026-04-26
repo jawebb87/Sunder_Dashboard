@@ -12,17 +12,12 @@ ZevDash.ClassModules["bard"] = {
         { id = "equipoise", name = "Equipoise" },
         { id = "stretching", name = "Stretching" },
     },
-    resources = {
-        "dithering",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>BARD DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local dithering_val = (snd and snd.charstats and snd.charstats.dithering) or "0"
-        mc:cecho("  <yellow>Dithering:<reset> " .. dithering_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking

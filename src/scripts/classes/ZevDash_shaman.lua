@@ -15,17 +15,12 @@ ZevDash.ClassModules["shaman"] = {
         { id = "nature whispers", name = "Whispers" },
         { id = "nature greenfoot", name = "Greenfoot" },
     },
-    resources = {
-        "energy",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>SHAMAN DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local energy_val = (snd and snd.charstats and snd.charstats.energy) or "0"
-        mc:cecho("  <yellow>Energy:<reset> " .. energy_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking

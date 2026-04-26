@@ -11,15 +11,12 @@ ZevDash.ClassModules["templar"] = {
     toggles = {
         { id = "bladefury", name = "Bladefury" },
     },
-    resources = {
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>TEMPLAR DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        mc:cecho("  <gray>No special resources to track.<reset>\n")
+        -- Action Tracking
 
         
         -- Action Tracking

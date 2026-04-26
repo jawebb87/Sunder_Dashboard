@@ -17,17 +17,12 @@ ZevDash.ClassModules["carnifex"] = {
         { id = "hound flank", name = "Flank" },
         { id = "hound openings", name = "Openings" },
     },
-    resources = {
-        "soulstone",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>CARNIFEX DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local soulstone_val = (snd and snd.charstats and snd.charstats.soulstone) or "0"
-        mc:cecho("  <yellow>Soulstone:<reset> " .. soulstone_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking

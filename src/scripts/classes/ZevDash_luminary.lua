@@ -10,22 +10,10 @@ ZevDash.ClassModules["luminary"] = {
     },
     toggles = {
     },
-    resources = {
-        "devotion",
-        "angel power",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>LUMINARY DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
-        
-        -- Resources
-
-        local devotion_val = (snd and snd.charstats and snd.charstats.devotion) or "0"
-        mc:cecho("  <yellow>Devotion:<reset> " .. devotion_val .. "\n")
-        local angel_power_val = (snd and snd.charstats and snd.charstats.angel_power) or "0"
-        mc:cecho("  <yellow>Angel power:<reset> " .. angel_power_val .. "\n")
-
         
         -- Action Tracking
 

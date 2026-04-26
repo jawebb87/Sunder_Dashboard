@@ -129,6 +129,8 @@ function Geyser.MiniConsole:new(options, parent) end
 ---@param message string
 function Geyser.MiniConsole:cecho(message) end
 function Geyser.MiniConsole:clear() end
+---@param font string
+function Geyser.MiniConsole:setFont(font) end
 
 --- Global ZevDash table
 ---@class ZevDash
@@ -146,3 +148,70 @@ function Geyser.MiniConsole:clear() end
 ---@field class_labels table
 ---@field tracked_entities table
 ZevDash = {}
+
+--- Global ZevWayfarer table
+---@class ZevWayfarer
+---@field mode string
+---@field axes_held number
+---@field axes_air number
+---@field axes_embedded number
+---@field axes_secured number
+---@field survive_ready boolean
+---@field hunting boolean
+---@field tracking boolean
+---@field tracking_target string
+---@field track fun(target_name?: string)
+---@field chase fun()
+---@field manage_combat_defenses fun()
+---@field refresh_ui fun()
+---@field reset_embedded fun()
+---@field Defaults table
+---@field Axes table
+---@field persistent_chant string
+ZevWayfarer = {}
+
+--- Global snd extension
+---@class snd
+---@field wayfarer_bash fun()
+---@field functional fun(): boolean
+---@field not_entangled fun(): boolean
+---@field have_aff fun(aff: string): boolean
+---@field checkAff fun(aff: string): boolean
+---@field registerEvent fun(name: string, event: string, callback: string|function)
+---@field send fun(cmd: string, echo?: boolean)
+---@field message fun(msg: string, type?: string)
+---@field delay fun(): number
+---@field send_attack fun(cmd: string)
+---@field targeting table
+---@field players_here table
+---@field waiting table
+---@field stance table
+---@field balance table
+---@field used table
+---@field sep string
+---@field limb_dmg table
+---@field target string
+---@field bash_shielded boolean
+---@field bashing table
+---@field def_priority table
+---@field def_priorities table
+
+--- Mudlet Stopwatch
+---@return number
+function createStopWatch() end
+
+--- Get current Mudlet font
+---@param windowName? string
+---@return string
+function getFont(windowName) end
+
+--- Get current Mudlet font size
+---@param windowName? string
+---@return number
+function getFontSize(windowName) end
+
+--- Set current Mudlet font and size
+---@param windowName string
+---@param fontName string
+---@param fontSize number
+function setFont(windowName, fontName, fontSize) end

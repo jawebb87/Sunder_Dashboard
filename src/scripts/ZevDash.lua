@@ -1,6 +1,6 @@
 -- [[ SUNDER DASHBOARD ]] --
--- Created by: Zev/Jacob Webb (Discord Handle: zev7984) & Antigravity
--- Version: 1.0.2
+-- Created by: Norrix/Zev/Jacob Webb (Discord Handle: zev7984) & Antigravity
+-- Version: 1.0.4
 
 if not snd then return end
 
@@ -11,38 +11,6 @@ ZevDash.SunderReady = ZevDash.SunderReady or false
 ZevDash.ClassModules = ZevDash.ClassModules or {}
 
 ZevDash.Styles = ZevDash.Styles or {}
-ZevDash.Styles.textColor = ZevDash.Styles.textColor or "SlateBlue"
-ZevDash.Styles.buttonStyle = ZevDash.Styles.buttonStyle or [[
-    border-width: 2px;
-    border-style: double;
-    border-color: DarkSlateBlue;
-    background-color: black;
-    border-radius: 5px;
-]]
-ZevDash.Styles.style_on_idle = ZevDash.Styles.style_on_idle or [[
-    background-color: DarkSlateGray;
-    border: 2px solid SlateGray;
-    border-radius: 5px;
-    qproperty-alignment: 'AlignCenter | AlignVCenter';
-]]
-ZevDash.Styles.style_on_hover = ZevDash.Styles.style_on_hover or [[
-    background-color: SlateGray;
-    border: 2px solid DarkSlateGray;
-    border-radius: 5px;
-    qproperty-alignment: 'AlignCenter | AlignVCenter';
-]]
-ZevDash.Styles.style_off_idle = ZevDash.Styles.style_off_idle or [[
-    background-color: DarkGray;
-    border: 2px solid Grey;
-    border-radius: 5px;
-    qproperty-alignment: 'AlignCenter | AlignVCenter';
-]]
-ZevDash.Styles.style_off_hover = ZevDash.Styles.style_off_hover or [[
-    background-color: Grey;
-    border: 2px solid DarkGray;
-    border-radius: 5px;
-    qproperty-alignment: 'AlignCenter | AlignVCenter';
-]]
 
 -- ZevDash Profiles & Persistence (Community Edition)
 ZevDash.profiles = ZevDash.profiles or {}
@@ -92,16 +60,25 @@ function ZevDash.loadState()
     end
 
     if snd and snd.defenses then
+        -- Step 0: If this is the first time loading this class, import Sunder's defaults
+        if not ZevDash.profiles[currentClass] then
+            ZevDash.profiles[currentClass] = {}
+            for def_name, def_data in pairs(snd.defenses) do
+                if def_data.needit then
+                    ZevDash.profiles[currentClass][def_name] = true
+                end
+            end
+            ZevDash.saveState()
+        end
+
         -- Step 1: Wipe all
         for def_name, _ in pairs(snd.defenses) do
             snd.defenses[def_name].needit = false
         end
         -- Step 2: Apply saved profile
-        if ZevDash.profiles[currentClass] then
-            for def_name, _ in pairs(ZevDash.profiles[currentClass]) do
-                if snd.defenses[def_name] then
-                    snd.defenses[def_name].needit = true
-                end
+        for def_name, _ in pairs(ZevDash.profiles[currentClass]) do
+            if snd.defenses[def_name] then
+                snd.defenses[def_name].needit = true
             end
         end
     end
@@ -112,6 +89,17 @@ function ZevDash.applyDefLocks()
     local currentClass = ZevDash.getCurrentClass()
     if currentClass == "unknown" then return end
 
+    -- First time seeing this class? Import Sunder's defaults
+    if not ZevDash.profiles[currentClass] then
+        ZevDash.profiles[currentClass] = {}
+        for def_name, def_data in pairs(snd.defenses) do
+            if def_data.needit then
+                ZevDash.profiles[currentClass][def_name] = true
+            end
+        end
+        ZevDash.saveState()
+    end
+
     local managed = {}
     for k in pairs(snd.def_options.general_defs or {}) do
         if snd.defenses[k] then managed[k] = true end
@@ -120,7 +108,7 @@ function ZevDash.applyDefLocks()
         if snd.defenses[k] then managed[k] = true end
     end
 
-    local profile = ZevDash.profiles[currentClass] or {}
+    local profile = ZevDash.profiles[currentClass]
     for def_name in pairs(managed) do
         if not profile[def_name] then
             snd.defenses[def_name].needit = false
@@ -134,100 +122,163 @@ end
 
 function ZevDash.build()
     ZevDash.window = Geyser.UserWindow:new({
-        name      = "ZevDash",
+        name = "ZevDash",
         titleText = "Sunder Dashboard",
-        width = "90c", height = "30c",
+        width = ZevDash.Layout.windowWidth,
+        height = ZevDash.Layout.windowHeight,
     })
 
     -- Plain Container for tab bar
     ZevDash.tabbar = Geyser.Container:new({
         name = "ZevDashTabBar",
-        x = 0, y = 0, width = "100%", height = "25px",
+        x = 0,
+        y = 0,
+        width = "100%",
+        height = ZevDash.Layout.tabHeight .. "px",
     }, ZevDash.window)
 
     -- Fixed Columns for Tab Bar (33% width each)
     ZevDash.col_core_tab = Geyser.Container:new({
         name = "ZevDashCol_CoreTab",
-        x = "0%", y = "0%", width = "33%", height = "100%",
+        x = "0%",
+        y = "0%",
+        width = "33%",
+        height = "100%",
     }, ZevDash.tabbar)
 
     ZevDash.col_def_tab = Geyser.Container:new({
         name = "ZevDashCol_DefTab",
-        x = "33%", y = "0%", width = "34%", height = "100%",
+        x = "33%",
+        y = "0%",
+        width = "34%",
+        height = "100%",
     }, ZevDash.tabbar)
 
     ZevDash.col_class_tab = Geyser.Container:new({
         name = "ZevDashCol_ClassTab",
-        x = "67%", y = "0%", width = "33%", height = "100%",
+        x = "67%",
+        y = "0%",
+        width = "33%",
+        height = "100%",
     }, ZevDash.tabbar)
 
     -- Tab Buttons
     ZevDash.btn_core = Geyser.Label:new({
         name = "ZevBtn_Core",
-        x = 0, y = 0, width = "100%", height = "100%",
+        x = 0,
+        y = 0,
+        width = "100%",
+        height = "100%",
         message = "<center>Core</center>",
-        stylesheet = ZevDash.Styles.buttonStyle, fgColor = ZevDash.Styles.textColor
+        stylesheet = ZevDash.Styles.buttonStyle,
+        fgColor = ZevDash.Styles.textColor
     }, ZevDash.col_core_tab)
 
     ZevDash.btn_def = Geyser.Label:new({
         name = "ZevBtn_Def",
-        x = 0, y = 0, width = "100%", height = "100%",
+        x = 0,
+        y = 0,
+        width = "100%",
+        height = "100%",
         message = "<center>Defenses</center>",
-        stylesheet = ZevDash.Styles.buttonStyle, fgColor = ZevDash.Styles.textColor
+        stylesheet = ZevDash.Styles.buttonStyle,
+        fgColor = ZevDash.Styles.textColor
     }, ZevDash.col_def_tab)
 
     ZevDash.btn_class_tab = Geyser.Label:new({
         name = "Class_Btn_ClassTab",
-        x = 0, y = 0, width = "100%", height = "100%",
+        x = 0,
+        y = 0,
+        width = "100%",
+        height = "100%",
         message = "<center>Class</center>",
-        stylesheet = ZevDash.Styles.buttonStyle, fgColor = ZevDash.Styles.textColor
+        stylesheet = ZevDash.Styles.buttonStyle,
+        fgColor = ZevDash.Styles.textColor
     }, ZevDash.col_class_tab)
 
     -- --- CORE PANE ---
     ZevDash.core_pane = Geyser.Container:new({
         name = "ZevDashCorePane",
-        x = 0, y = "25px", width = "100%", height = "-25px",
+        x = 0,
+        y = ZevDash.Layout.paneStartY .. "px",
+        width = "100%",
+        height = "-" .. ZevDash.Layout.paneStartY .. "px",
     }, ZevDash.window)
     ZevDash.core_col_a = Geyser.Container:new({
         name = "ZevDashCoreColA",
-        x = "0%", y = 0, width = "33%", height = "100%",
+        x = "0%",
+        y = 0,
+        width = "33%",
+        height = "100%",
     }, ZevDash.core_pane)
     ZevDash.core_col_b = Geyser.Container:new({
         name = "ZevDashCoreColB",
-        x = "33%", y = 0, width = "34%", height = "100%",
+        x = "33%",
+        y = 0,
+        width = "34%",
+        height = "100%",
     }, ZevDash.core_pane)
     ZevDash.core_col_c = Geyser.Container:new({
         name = "ZevDashCoreColC",
-        x = "67%", y = 0, width = "33%", height = "100%",
+        x = "67%",
+        y = 0,
+        width = "33%",
+        height = "100%",
     }, ZevDash.core_pane)
 
     ZevDash.def_pane = Geyser.Container:new({
         name = "ZevDashDefPane",
-        x = 0, y = "25px", width = "100%", height = "-25px",
+        x = 0,
+        y = ZevDash.Layout.paneStartY .. "px",
+        width = "100%",
+        height = "-" .. ZevDash.Layout.paneStartY .. "px",
     }, ZevDash.window)
     ZevDash.def_col_a = Geyser.Container:new({
         name = "ZevDashDefColA",
-        x = "0%", y = 0, width = "50%", height = "100%",
+        x = "0%",
+        y = 0,
+        width = "50%",
+        height = "100%",
     }, ZevDash.def_pane)
     ZevDash.def_col_b = Geyser.Container:new({
         name = "ZevDashDefColB",
-        x = "50%", y = 0, width = "50%", height = "100%",
+        x = "50%",
+        y = 0,
+        width = "50%",
+        height = "100%",
     }, ZevDash.def_pane)
 
     -- --- CLASS PANE (Split Top/Bot) ---
     ZevDash.class_pane = Geyser.Container:new({
-        name = "ZevDashClassPane", x = 0, y = "25px", width = "100%", height = "-25px",
+        name = "ZevDashClassPane",
+        x = 0,
+        y = ZevDash.Layout.paneStartY .. "px",
+        width = "100%",
+        height = "-" .. ZevDash.Layout.paneStartY .. "px",
     }, ZevDash.window)
-    
+
     ZevDash.class_console = Geyser.MiniConsole:new({
-        name = "ZevDashClassConsole", x = 0, y = 0, width = "100%", height = "30%",
+        name = "ZevDashClassConsole",
+        x = 0,
+        y = 0,
+        width = "100%",
+        height = ZevDash.Layout.classConsoleHeight,
         color = "black",
+        fontSize = ZevDash.Styles.fontSize,
     }, ZevDash.class_pane)
-    
+
+    if ZevDash.Styles.fontFamily then
+        ZevDash.class_console:setFont(ZevDash.Styles.fontFamily)
+    end
+
     ZevDash.class_bot_pane = Geyser.Container:new({
-        name = "ZevDashClassBotPane", x = 0, y = "30%", width = "100%", height = "70%",
+        name = "ZevDashClassBotPane",
+        x = 0,
+        y = ZevDash.Layout.classConsoleHeight,
+        width = "100%",
+        height = ZevDash.Layout.classBotPaneHeight,
     }, ZevDash.class_pane)
-    
+
     ZevDash.class_col_a = Geyser.Container:new({
         name = "ZevDashClassColA", x = "0%", y = 0, width = "50%", height = "100%",
     }, ZevDash.class_bot_pane)
@@ -237,12 +288,20 @@ function ZevDash.build()
 
     -- Headers for Class Pane
     ZevDash.lbl_class_actions = Geyser.Label:new({
-        name = "ZevDashLblClassActions", x = "5%", y = "5px", width = "90%", height = "25px",
+        name = "ZevDashLblClassActions",
+        x = ZevDash.Layout.headerX,
+        y = ZevDash.Layout.headerY .. "px",
+        width = ZevDash.Layout.headerWidth,
+        height = ZevDash.Layout.headerHeight .. "px",
         message = "<center><b><font color='white'>ACTIONS</font></b></center>",
         color = "black",
     }, ZevDash.class_col_a)
     ZevDash.lbl_class_toggles = Geyser.Label:new({
-        name = "ZevDashLblClassToggles", x = "5%", y = "5px", width = "90%", height = "25px",
+        name = "ZevDashLblClassToggles",
+        x = ZevDash.Layout.headerX,
+        y = ZevDash.Layout.headerY .. "px",
+        width = ZevDash.Layout.headerWidth,
+        height = ZevDash.Layout.headerHeight .. "px",
         message = "<center><b><font color='white'>TOGGLES</font></b></center>",
         color = "black",
     }, ZevDash.class_col_b)
@@ -261,6 +320,7 @@ function ZevDash.build()
             if ZevDash and ZevDash.applyDefLocks then
                 ZevDash.applyDefLocks()
             end
+            send("\n")
         end
         snd._zdash_load_locked = true
     end
@@ -278,6 +338,7 @@ function ZevDash.saveWindowLayout()
         ZevDash.window:saveLayout()
     end
 end
+
 if not ZevDash.sysSaveEventHandler then
     ZevDash.sysSaveEventHandler = registerAnonymousEventHandler("sysSaveEvent", "ZevDash.saveWindowLayout")
 end
@@ -295,7 +356,7 @@ end
 
 function ZevDash.toggleCore(toggle_key)
     if not snd then return end
-    
+
     if toggle_key == "active" then
         if snd.toggles then
             snd.toggles.active = not snd.toggles.active
@@ -342,9 +403,10 @@ function ZevDash.btnHoverEnter(pane, key)
         val = snd.defenses and snd.defenses[key] and snd.defenses[key].needit
     elseif pane == "class_action" then
         lbl = ZevDash.class_labels and ZevDash.class_labels[key]
-        val = false -- actions are never ON, but we hover them
-        if lbl then lbl:setStyleSheet(ZevDash.Styles.style_off_hover) end
-        return
+        local actId = key:gsub("^act_", "")
+        local currentClass = ZevDash.getCurrentClass()
+        local module = ZevDash.ClassModules and ZevDash.ClassModules[currentClass]
+        val = module and module.isActionOn and module.isActionOn(actId) or false
     elseif pane == "class_toggle" then
         lbl = ZevDash.class_labels and ZevDash.class_labels[key]
         val = ZevDash.class_toggles[key]
@@ -364,8 +426,10 @@ function ZevDash.btnHoverLeave(pane, key)
         val = snd.defenses and snd.defenses[key] and snd.defenses[key].needit
     elseif pane == "class_action" then
         lbl = ZevDash.class_labels and ZevDash.class_labels[key]
-        if lbl then lbl:setStyleSheet(ZevDash.Styles.style_off_idle) end
-        return
+        local actId = key:gsub("^act_", "")
+        local currentClass = ZevDash.getCurrentClass()
+        local module = ZevDash.ClassModules and ZevDash.ClassModules[currentClass]
+        val = module and module.isActionOn and module.isActionOn(actId) or false
     elseif pane == "class_toggle" then
         lbl = ZevDash.class_labels and ZevDash.class_labels[key]
         val = ZevDash.class_toggles[key]
@@ -411,13 +475,26 @@ ZevDash.CoreTooltips = {
 
 function ZevDash.renderCoreButtons()
     if not snd.toggles then return end
-    
+
     local ignore_core = {
-        chameleonpeople = true, healing = true, standing = true, clotting = true,
-        cobra = true, questing = true, goggle_level = true, gauntlet_level = true,
-        diagaffs = true, laesan = true, ascendedtype = true, mount = true,
-        monomode = true, pagelength = true, reboundingtime = true, purge = true,
-        purify = true, panacea = true
+        chameleonpeople = true,
+        healing = true,
+        standing = true,
+        clotting = true,
+        cobra = true,
+        questing = true,
+        goggle_level = true,
+        gauntlet_level = true,
+        diagaffs = true,
+        laesan = true,
+        ascendedtype = true,
+        mount = true,
+        monomode = true,
+        pagelength = true,
+        reboundingtime = true,
+        purge = true,
+        purify = true,
+        panacea = true
     }
 
     local keys = {}
@@ -427,15 +504,17 @@ function ZevDash.renderCoreButtons()
         end
     end
     table.sort(keys)
-    
+
     ZevDash.core_labels = ZevDash.core_labels or {}
     local col_a_count, col_b_count, col_c_count = 0, 0, 0
-    
+    local step = ZevDash.Layout.buttonHeight + ZevDash.Layout.buttonGap
+    local startY = 10
+
     for i, key in ipairs(keys) do
         local val = snd.toggles[key]
         local mod = i % 3
         local parent_col, index
-        
+
         if mod == 1 then
             parent_col = ZevDash.core_col_a
             index = col_a_count
@@ -449,27 +528,32 @@ function ZevDash.renderCoreButtons()
             index = col_c_count
             col_c_count = col_c_count + 1
         end
-        
+
+        local yPos = (index * step + startY) .. "px"
+
         if not ZevDash.core_labels[key] then
             ZevDash.core_labels[key] = Geyser.Label:new({
                 name = "ZevDashCoreBtn_" .. key,
-                x = "5%", y = (index * 35 + 10) .. "px", width = "90%", height = "30px",
+                x = ZevDash.Layout.buttonX,
+                y = yPos,
+                width = ZevDash.Layout.buttonWidth,
+                height = ZevDash.Layout.buttonHeight .. "px",
             }, parent_col)
             local lbl = ZevDash.core_labels[key]
             lbl:setClickCallback("ZevDash.toggleCore", key)
             lbl:setOnEnter("ZevDash.btnHoverEnter", "core", key)
             lbl:setOnLeave("ZevDash.btnHoverLeave", "core", key)
-            
+
             local tooltip = ZevDash.CoreTooltips[key:lower()] or ""
             if tooltip ~= "" then lbl:setToolTip(tooltip) end
         end
-        
+
         local lbl = ZevDash.core_labels[key]
         local display_name = key:title()
         if key == "active" then display_name = "Sunder" end
         lbl:echo("<center><font color='" .. ZevDash.Styles.textColor .. "'>" .. display_name .. "</font></center>")
         lbl:setStyleSheet(val and ZevDash.Styles.style_on_idle or ZevDash.Styles.style_off_idle)
-        lbl:move("5%", (index * 35 + 10) .. "px")
+        lbl:move(ZevDash.Layout.buttonX, yPos)
     end
 end
 
@@ -477,7 +561,7 @@ function ZevDash.renderDefButtons()
     if not snd.defenses or not snd.def_options then return end
     local keys = {}
     local shown = {}
-    
+
     local options = snd.def_options.general_defs or {}
     for k, _ in pairs(options) do
         if snd.defenses[k] and not shown[k] then
@@ -485,7 +569,7 @@ function ZevDash.renderDefButtons()
             shown[k] = true
         end
     end
-    
+
     local currentClass = ZevDash.getCurrentClass()
     if currentClass ~= "unknown" and snd.def_options[currentClass] then
         for k, _ in pairs(snd.def_options[currentClass]) do
@@ -495,34 +579,40 @@ function ZevDash.renderDefButtons()
             end
         end
     end
-    
+
     table.sort(keys)
     ZevDash.def_labels = ZevDash.def_labels or {}
     local col_a_count, col_b_count = 0, 0
-    
+    local step = ZevDash.Layout.buttonHeight + ZevDash.Layout.buttonGap
+    local startY = 10
+
     for i, key in ipairs(keys) do
         local val = snd.defenses[key].needit
         local is_col_a = (i % 2 ~= 0)
         local parent_col = is_col_a and ZevDash.def_col_a or ZevDash.def_col_b
         local index = is_col_a and col_a_count or col_b_count
-        
+        local yPos = (index * step + startY) .. "px"
+
         if not ZevDash.def_labels[key] then
             ZevDash.def_labels[key] = Geyser.Label:new({
                 name = "ZevDashDefBtn_" .. key,
-                x = "5%", y = (index * 35 + 10) .. "px", width = "90%", height = "30px",
+                x = ZevDash.Layout.buttonX,
+                y = yPos,
+                width = ZevDash.Layout.buttonWidth,
+                height = ZevDash.Layout.buttonHeight .. "px",
             }, parent_col)
             local lbl = ZevDash.def_labels[key]
             lbl:setClickCallback("ZevDash.toggleDef", key)
             lbl:setOnEnter("ZevDash.btnHoverEnter", "defs", key)
             lbl:setOnLeave("ZevDash.btnHoverLeave", "defs", key)
         end
-        
+
         local lbl = ZevDash.def_labels[key]
         local cleanName = key:gsub("^def_", ""):title()
         lbl:echo("<center><font color='" .. ZevDash.Styles.textColor .. "'>" .. cleanName .. "</font></center>")
         lbl:setStyleSheet(val and ZevDash.Styles.style_on_idle or ZevDash.Styles.style_off_idle)
-        lbl:move("5%", (index * 35 + 10) .. "px")
-        
+        lbl:move(ZevDash.Layout.buttonX, yPos)
+
         if is_col_a then col_a_count = col_a_count + 1 else col_b_count = col_b_count + 1 end
     end
 end
@@ -531,18 +621,31 @@ function ZevDash.renderClassButtons()
     local currentClass = ZevDash.getCurrentClass()
     local module = ZevDash.ClassModules and ZevDash.ClassModules[currentClass]
     if not module then return end
-    
+
     local actions = module.actions or {}
     local toggles = module.toggles or {}
     ZevDash.class_labels = ZevDash.class_labels or {}
-    
+    local step = ZevDash.Layout.buttonHeight + ZevDash.Layout.buttonGap
+    local startY = ZevDash.Layout.classButtonStartY
+
+    -- Update Headers
+    local actionHeader = module.actionHeader or "ACTIONS"
+    local toggleHeader = module.toggleHeader or "TOGGLES"
+    ZevDash.lbl_class_actions:echo("<center><b><font color='white'>" .. actionHeader .. "</font></b></center>")
+    ZevDash.lbl_class_toggles:echo("<center><b><font color='white'>" .. toggleHeader .. "</font></b></center>")
+
     -- Render Actions (Column A)
     for i, act in ipairs(actions) do
         local key = "act_" .. act.id
+        local val = module.isActionOn and module.isActionOn(act.id) or false
+        local yPos = ((i - 1) * step + startY) .. "px"
         if not ZevDash.class_labels[key] then
             ZevDash.class_labels[key] = Geyser.Label:new({
                 name = "ZevDashClassBtn_" .. key,
-                x = "5%", y = ((i-1) * 35 + 35) .. "px", width = "90%", height = "30px",
+                x = ZevDash.Layout.buttonX,
+                y = yPos,
+                width = ZevDash.Layout.buttonWidth,
+                height = ZevDash.Layout.buttonHeight .. "px",
             }, ZevDash.class_col_a)
             local lbl = ZevDash.class_labels[key]
             lbl:setClickCallback("ZevDash.doClassAction", act.cmd)
@@ -551,19 +654,23 @@ function ZevDash.renderClassButtons()
         end
         local lbl = ZevDash.class_labels[key]
         lbl:echo("<center><font color='" .. ZevDash.Styles.textColor .. "'>" .. act.name .. "</font></center>")
-        lbl:setStyleSheet(ZevDash.Styles.style_off_idle) -- Actions always default to OFF idle look
-        lbl:move("5%", ((i-1) * 35 + 35) .. "px")
+        lbl:setStyleSheet(val and ZevDash.Styles.style_on_idle or ZevDash.Styles.style_off_idle)
+        lbl:move(ZevDash.Layout.buttonX, yPos)
     end
-    
+
     -- Render Toggles (Column B)
     for i, tog in ipairs(toggles) do
         local key = tog.id
         local val = module.isToggleOn and module.isToggleOn(key) or false
-        
+        local yPos = ((i - 1) * step + startY) .. "px"
+
         if not ZevDash.class_labels[key] then
             ZevDash.class_labels[key] = Geyser.Label:new({
                 name = "ZevDashClassBtn_" .. key,
-                x = "5%", y = ((i-1) * 35 + 35) .. "px", width = "90%", height = "30px",
+                x = ZevDash.Layout.buttonX,
+                y = yPos,
+                width = ZevDash.Layout.buttonWidth,
+                height = ZevDash.Layout.buttonHeight .. "px",
             }, ZevDash.class_col_b)
             local lbl = ZevDash.class_labels[key]
             lbl:setClickCallback("ZevDash.toggleClass", tog.id)
@@ -573,14 +680,14 @@ function ZevDash.renderClassButtons()
         local lbl = ZevDash.class_labels[key]
         lbl:echo("<center><font color='" .. ZevDash.Styles.textColor .. "'>" .. tog.name .. "</font></center>")
         lbl:setStyleSheet(val and ZevDash.Styles.style_on_idle or ZevDash.Styles.style_off_idle)
-        lbl:move("5%", ((i-1) * 35 + 35) .. "px")
+        lbl:move(ZevDash.Layout.buttonX, yPos)
     end
 end
 
 function ZevDash.displayPage(page)
     if not ZevDash.is_built then return end
     ZevDash.active_page = page
-    
+
     ZevDash.core_pane:hide()
     ZevDash.def_pane:hide()
     ZevDash.class_pane:hide()
@@ -601,10 +708,14 @@ function ZevDash.displayPage(page)
         ZevDash.class_pane:show()
         local mc = ZevDash.class_console
         mc:clear()
-        
+
         local currentClass = ZevDash.getCurrentClass()
         local module = ZevDash.ClassModules and ZevDash.ClassModules[currentClass]
-        
+
+        if ZevDash.renderResources then
+            ZevDash.renderResources(mc)
+        end
+
         if module and module.renderInfo then
             module.renderInfo(mc)
         else
@@ -612,7 +723,7 @@ function ZevDash.displayPage(page)
             mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
             mc:cecho("\n  <red>NO MODULE FOUND FOR CLASS.<reset>\n")
         end
-        
+
         -- Render Bottom Pane Labels
         ZevDash.renderClassButtons()
     end
@@ -623,7 +734,8 @@ function ZevDash.displayPage(page)
         .. (page == "core" and "<b>CORE</b>" or "Core") .. "</font></center>")
     ZevDash.btn_def:echo("<center><font color='" .. (page == "defs" and "white" or ZevDash.Styles.textColor) .. "'>"
         .. (page == "defs" and "<b>DEFENSES</b>" or "Defenses") .. "</font></center>")
-    ZevDash.btn_class_tab:echo("<center><font color='" .. (page == "class" and "white" or ZevDash.Styles.textColor) .. "'>"
+    ZevDash.btn_class_tab:echo("<center><font color='" ..
+        (page == "class" and "white" or ZevDash.Styles.textColor) .. "'>"
         .. (page == "class" and "<b>" .. currentClass .. "</b>" or currentClass) .. "</font></center>")
 end
 
@@ -631,7 +743,7 @@ end
 -- 4. THE SMART SUMMONER
 -- ========================================================
 
-function ZevDash.toggle()
+function ZevDash.show()
     if not ZevDash.SunderReady then
         cecho("\n<red>ZevDash: Sunder is not ready yet. Sending 'def' to probe...<reset>\n")
         send("def", false)
@@ -651,14 +763,18 @@ function ZevDash.toggle()
 
     if not ZevDash.is_built then
         ZevDash.build()
-    elseif ZevDash.window and not ZevDash.window.hidden then
-        ZevDash.window:hide()
-        ZevDash.visible = false
     else
         ZevDash.window:show()
         ZevDash.visible = true
         ZevDash.loadState()
         ZevDash.displayPage(ZevDash.active_page or "core")
+    end
+end
+
+function ZevDash.hide()
+    if ZevDash.window then
+        ZevDash.window:hide()
+        ZevDash.visible = false
     end
 end
 
@@ -689,9 +805,11 @@ end
 
 ZevDash.tracked_entities = ZevDash.tracked_entities or {}
 ZevDash.summon_keywords = {
-    "direwolf", "orel", "alpha", "orgyuk", "spider", -- Predator
+    "direwolf", "orel", "alpha", "orgyuk", "spider",                                                            -- Predator
     "wisp", "weasel", "rook", "coyote", "raccoon", "gyrfalcon", "raloth", "crocodile", "icewyrm", "cockatrice", -- Sentinel
-    "lurker", "wardpeeler", "lightdrinker", "murder", "pilferer", "darkhound", "monstrosity", "throatripper", "brutaliser", "eviscerator", "rimestalker", "terrifier" -- Executor
+    "lurker", "wardpeeler", "lightdrinker", "murder", "pilferer", "darkhound", "monstrosity", "throatripper",
+    "brutaliser", "eviscerator", "rimestalker",
+    "terrifier"                                                                                                 -- Executor
 }
 
 function ZevDash.handleRoomItems(event, arg)
@@ -732,7 +850,7 @@ function ZevDash.handleRoomItems(event, arg)
             end
         end
     end
-    
+
     if ZevDash.visible and ZevDash.active_page == "class" then
         ZevDash.displayPage("class")
     end

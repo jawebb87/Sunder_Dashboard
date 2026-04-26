@@ -10,17 +10,12 @@ ZevDash.ClassModules["indorani"] = {
     },
     toggles = {
     },
-    resources = {
-        "essence",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>INDORANI DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local essence_val = (snd and snd.charstats and snd.charstats.essence) or "0"
-        mc:cecho("  <yellow>Essence:<reset> " .. essence_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking

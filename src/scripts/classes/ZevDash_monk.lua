@@ -16,17 +16,12 @@ ZevDash.ClassModules["monk"] = {
         { id = "mind cloak", name = "Cloak" },
         { id = "mind net", name = "Net" },
     },
-    resources = {
-        "kai",
-    },
     
     renderInfo = function(mc)
         mc:cecho("\n <white><u>MONK DATA</u><reset>\n")
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
         
-        -- Resources
-        local kai_val = (snd and snd.charstats and snd.charstats.kai) or "0"
-        mc:cecho("  <yellow>Kai:<reset> " .. kai_val .. "\n")
+        -- Action Tracking
 
         
         -- Action Tracking
