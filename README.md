@@ -17,7 +17,7 @@ A modular dashboard system for the **Sunder** framework in Aetolia. This UI is d
 
 ## 📥 Installation
 
-1. Download the latest `.mpackage` from the
+1. Download the latest `.mpackage` from the Releases tab on GitHub.
 2. In Mudlet, open the **Package Manager**.
 3. Click **Install** and select the downloaded file.
 4. Type `smenu` in your Mudlet input line to summon the dashboard.
