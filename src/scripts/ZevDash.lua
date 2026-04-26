@@ -1,11 +1,14 @@
 -- [[ SUNDER DASHBOARD ]] --
 -- Created by: Zev/Jacob Webb (Discord Handle: zev7984) & Antigravity
--- Version: 1.0.1
+-- Version: 1.0.2
 
 if not snd then return end
 
 ZevDash = ZevDash or {}
 ZevDash.SunderReady = ZevDash.SunderReady or false
+
+-- Routing tables for modules
+ZevDash.ClassModules = ZevDash.ClassModules or {}
 
 ZevDash.Styles = ZevDash.Styles or {}
 ZevDash.Styles.textColor = ZevDash.Styles.textColor or "SlateBlue"
@@ -111,6 +114,9 @@ function ZevDash.applyDefLocks()
 
     local managed = {}
     for k in pairs(snd.def_options.general_defs or {}) do
+        if snd.defenses[k] then managed[k] = true end
+    end
+    for k in pairs(snd.def_options[currentClass] or {}) do
         if snd.defenses[k] then managed[k] = true end
     end
 
@@ -479,9 +485,10 @@ function ZevDash.renderDefButtons()
             shown[k] = true
         end
     end
-    -- Support for Wayfarer specific defs (if mixed)
-    if snd.def_options.wayfarer then
-        for k, _ in pairs(snd.def_options.wayfarer) do
+    
+    local currentClass = ZevDash.getCurrentClass()
+    if currentClass ~= "unknown" and snd.def_options[currentClass] then
+        for k, _ in pairs(snd.def_options[currentClass]) do
             if snd.defenses[k] and not shown[k] then
                 table.insert(keys, k)
                 shown[k] = true
