@@ -1,6 +1,6 @@
--- [[ SUNDER MASTER DASHBOARD ]] --
--- Created by: Zev (Discord Handle: zev7984) & Antigravity
--- Version: 1.0.0
+-- [[ SUNDER DASHBOARD ]] --
+-- Created by: Zev/Jacob Webb (Discord Handle: zev7984) & Antigravity
+-- Version: 1.0.1
 
 if not snd then return end
 
