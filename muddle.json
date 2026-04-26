@@ -7,6 +7,7 @@
     "src/aliases/aliases.json",
     "src/scripts/scripts.json",
     "src/scripts/classes/scripts.json",
+    "src/triggers/triggers.json""src/scripts/classes/scripts.json",
     "src/triggers/triggers.json"
   ]
 }
