@@ -1,0 +1,10 @@
+{
+    "package": "Sunder_Dashboard",
+    "title": "Sunder Dashboard",
+    "description": "A Dashboard for Sunder. Still a work in progress. If you have suggestions or to report issues contatct me on discord @zev7984",
+    "version": "1.0.0",
+    "author": "Zev",
+    "icon": "Dashboard.png",
+    "dependencies": "Sunder",
+    "outputFile": true
+}

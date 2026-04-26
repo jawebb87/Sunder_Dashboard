@@ -1,0 +1,16 @@
+[
+    {
+        "name": "community_menu",
+        "regex": "^smenu(?: (.+))?$",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/aliases/community_menu.lua"
+    },
+    {
+        "name": "defup_intercept",
+        "regex": "^defup(?: (.*))?$",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/aliases/defup_intercept.lua"
+    }
+]

@@ -1,0 +1,81 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"Lua.runtime.version": "Lua 5.1",
+		"Lua.diagnostics.globals": [
+			"Geyser",
+			"snd",
+			"ZevDash",
+			"gmcp",
+			"cecho",
+			"decho",
+			"hecho",
+			"send",
+			"matches",
+			"multimatches",
+			"registerAnonymousEventHandler",
+			"tempTimer",
+			"getMudletHomeDir",
+			"table",
+			"string",
+			"math",
+			"io",
+			"os",
+			"debug",
+			"coroutine",
+			"bit32",
+			"utf8",
+			"rex",
+			"zip",
+			"lfs",
+			"sqlite3",
+			"pcre",
+			"json",
+			"luasql",
+			"socket",
+			"mime",
+			"display",
+			"print",
+			"select",
+			"tonumber",
+			"tostring",
+			"pairs",
+			"ipairs",
+			"type"
+		],
+		"Lua.workspace.library": [
+			"${workspaceFolder}/src"
+		],
+		"Lua.diagnostics.disable": [
+			"lowercase-global"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"sumneko.lua"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Build Sunder Dashboard",
+				"type": "shell",
+				"command": "java -jar muddle-1.1.0-all.jar",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": [],
+				"presentation": {
+					"reveal": "always",
+					"panel": "new"
+				}
+			}
+		]
+	}
+}

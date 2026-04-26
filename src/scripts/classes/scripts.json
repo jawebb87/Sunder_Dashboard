@@ -1,0 +1,157 @@
+[
+    {
+        "name": "ZevDash_bard",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_predator",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_shapeshifter",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_wayfarer",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_akkari",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_ascendril",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_luminary",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_templar",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_tidesage",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_zealot",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_bloodborn",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_carnifex",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_earthcaller",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_indorani",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_praenomen",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_ravager",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_teradrim",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_monk",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_oneiromancer",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_runecarver",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_sentinel",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_shaman",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_voidseer",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_warden",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_alchemist",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_archivist",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_executor",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_infiltrator",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_revenant",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_sciomancer",
+        "isActive": "yes",
+        "isFolder": "no"
+    },
+    {
+        "name": "ZevDash_siderealist",
+        "isActive": "yes",
+        "isFolder": "no"
+    }
+]
