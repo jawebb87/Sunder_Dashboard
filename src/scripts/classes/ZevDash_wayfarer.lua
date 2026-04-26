@@ -61,12 +61,7 @@ end
 
 ZevDash.ClassModules["wayfarer"] = {
     actionHeader = "BATTLECHANTS",
-    actionHeader = "BATTLECHANTS",
     actions = {
-        { id = "chant_anthem",  name = "Anthem",  cmd = "anthem" },
-        { id = "chant_bolster", name = "Bolster", cmd = "bolster" },
-        { id = "chant_rally",   name = "Rally",   cmd = "rally" },
-        { id = "chant_phalanx", name = "Phalanx", cmd = "phalanx" },
         { id = "chant_anthem",  name = "Anthem",  cmd = "anthem" },
         { id = "chant_bolster", name = "Bolster", cmd = "bolster" },
         { id = "chant_rally",   name = "Rally",   cmd = "rally" },
@@ -85,8 +80,6 @@ ZevDash.ClassModules["wayfarer"] = {
         mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
 
         -- Axe Tracking
-
-        -- Axe Tracking
         if ZevDash.Wayfarer then
             local hand = ZevDash.Wayfarer.axes_held or 0
             local air = ZevDash.Wayfarer.axes_air or 0
@@ -103,8 +96,6 @@ ZevDash.ClassModules["wayfarer"] = {
     end,
 
     doAction = function(action_cmd)
-        -- In our case, action_cmd is the chant name (anthem, bolster, etc)
-        ZevDash.toggleChant(action_cmd)
         -- In our case, action_cmd is the chant name (anthem, bolster, etc)
         ZevDash.toggleChant(action_cmd)
     end,
@@ -135,14 +126,6 @@ ZevDash.ClassModules["wayfarer"] = {
             return snd.toggles[key]
         end
         return ZevDash.class_toggles[key] or false
-    end,
-
-    isActionOn = function(id)
-        -- For Wayfarer, actions are chants
-        if snd and snd.toggles and snd.toggles[id] ~= nil then
-            return snd.toggles[id]
-        end
-        return ZevDash.class_toggles[id] or false
     end,
 
     isActionOn = function(id)

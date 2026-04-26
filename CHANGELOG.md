@@ -1,30 +1,17 @@
-# Changelog - v1.0.4
+# Changelog
 
-## Core Architecture
+All notable changes to this project will be documented in this file.
 
-- **First-Time Setup**:
-  - Implemented an initialization check that safely imports Sunder's default defense settings (its native `needit` states) when loading a class profile for the very first time.
-  - This prevents the dashboard from turning off all defenses if a user opens it before setting up their profile, providing a much friendlier out-of-the-box experience.
+## [1.0.4] - 2026-04-26
 
-- **Centralized Class Resource Handling**:
-  - Implemented `ZevDash.renderResources(mc)` in a new [ZevDash_GetResource.lua](file:///home/zev/Dev/Sunder_Dashboard/src/scripts/ZevDash_GetResource.lua) script.
-  - The dashboard now dynamically iterates through `snd.charstats` to display class resources (Fury, Blood, Essence, etc.), automatically title-casing them.
-  - This eliminates the need for manual resource definitions for every class.
+### Added
 
-- **System-Wide Script Optimization**:
-  - Cleaned up **31 class scripts** in `src/scripts/classes/`, removing hundreds of lines of redundant hardcoded resource rendering logic.
-  - Standardized the module structure across all classes.
+- **Wayfarer Precision Sync**: Implemented a latency-aware toggle system for Battlechants. Toggles now wait for server confirmation before updating UI state.
+- **First-Time Setup**: Automatic importation of Sunder's default defense state (`needit`) when a class profile is first initialized.
+- **Fury Balance Trigger**: New trigger for "You cannot bring forth your Fury again just yet" to prevent UI desync during rapid toggling.
 
-## Sunder Integration
+### Changed
 
-- **Defense Load Nudge**:
-  - Modified the `snd.load_def2` hook in [ZevDash.lua](file:///home/zev/Dev/Sunder_Dashboard/src/scripts/ZevDash.lua) to execute `send("\n")` immediately after applying dashboard defense locks.
-  - This "nudge" ensures that Sunder re-evaluates and applies defensive states correctly upon initialization or class change.
-
-## Class Integration (Wayfarer)
-
-- **Battlechant UI Synchronization**:
-  - Implemented dynamic, latency-synced UI updates for Battlechants.
-  - The dashboard now utilizes `getNetworkLatency()` and a dedicated failure trigger (`chant_failed.lua`) to ensure that a chant toggle only visually turns off if the server confirms the `CEASE` command was successful (preventing UI desync when off Fury balance).
-- **Core Pane Fix**:
-  - Wayfarer Battlechants no longer improperly populate on the Core settings pane.
+- **UI Organization**: Battlechant toggles have been removed from the "Core" page and now live exclusively in the class-specific tab.
+- **Resource Management**: Refactored internal resource handling to be more dynamic and class-agnostic.
+- **Font Scaling**: Improved stylesheet injection for more consistent font rendering across different Mudlet display settings.
