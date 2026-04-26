@@ -48,7 +48,8 @@
 			"type"
 		],
 		"Lua.workspace.library": [
-			"${workspaceFolder}/src"
+			"${workspaceFolder}/src",
+			"${workspaceFolder}/.vscode"
 		],
 		"Lua.diagnostics.disable": [
 			"lowercase-global"
