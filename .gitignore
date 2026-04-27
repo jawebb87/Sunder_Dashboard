@@ -45,3 +45,6 @@ luac.out
 *.mpackage
 build/
 .output
+bash_audit.txt
+Dash_autit.txt
+.gitignore
