@@ -1,0 +1,32 @@
+[
+    {
+        "name": "ZevDash_Tooltips",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/functions/ZevDash_Tooltips.lua"
+    },
+    {
+        "name": "ZevDash_ClassDetection",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/functions/ZevDash_ClassDetection.lua"
+    },
+    {
+        "name": "ZevDash_Interactive",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/functions/ZevDash_Interactive.lua"
+    },
+    {
+        "name": "ZevDash_SummonTracker",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/functions/ZevDash_SummonTracker.lua"
+    },
+    {
+        "name": "ZevDash_Help",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/functions/ZevDash_Help.lua"
+    }
+]

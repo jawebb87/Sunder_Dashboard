@@ -1,0 +1,14 @@
+[
+    {
+        "name": "ZevDash_Default_Config",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/configs/ZevDash_Default_Config.lua"
+    },
+    {
+        "name": "ZevDash_Custom_Config",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/configs/ZevDash_Custom_Config.lua"
+    }
+]

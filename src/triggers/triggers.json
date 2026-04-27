@@ -105,7 +105,15 @@
                     {
                         "pattern": "^\\w+ wrenches your (?:handaxe|tomahawk|axe) out of .*\\.$",
                         "type": "regex"
-                    },
+                    }
+                ]
+            },
+            {
+                "name": "axe_dropped",
+                "isActive": "yes",
+                "isFolder": "no",
+                "scriptPath": "src/triggers/axe_dropped.lua",
+                "patterns": [
                     {
                         "pattern": "^Your (?:handaxe|tomahawk|axe) falls to the ground.*$",
                         "type": "regex"

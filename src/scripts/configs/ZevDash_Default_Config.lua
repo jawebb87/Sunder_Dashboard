@@ -10,7 +10,7 @@ local fontStyle = "font-family: '" .. dashFont .. "'; font-size: " .. dashFontSi
 ZevDash = ZevDash or {}
 ZevDash.Defaults = {
     textColor = "white",
-    
+
     style_on_idle = [[
         background-color: DarkSlateGray;
         border: 2px solid SlateGray;
@@ -35,7 +35,7 @@ ZevDash.Defaults = {
         border-radius: 5px;
         qproperty-alignment: 'AlignCenter | AlignVCenter';
     ]] .. fontStyle,
-    
+
     -- Legacy support for tab buttons
     buttonStyle = [[
         border-width: 2px;
@@ -52,33 +52,31 @@ ZevDash.Defaults = {
         -- Window dimensions
         windowWidth = "90c",
         windowHeight = "30c",
-        
         -- Tab bar
         tabHeight = 30,
-        
         -- Button defaults
         buttonHeight = 35,
         buttonWidth = "90%",
         buttonX = "5%",
         buttonGap = 5,
-        
         -- Header defaults (Class Pane)
         headerHeight = 30,
         headerY = 5,
         headerX = "5%",
         headerWidth = "90%",
-        
         -- Pane specifics
         paneStartY = 30, -- starts after tab bar
         coreCols = 3,
         defCols = 2,
         classCols = 2,
-        
         -- Class Pane specific
-        classConsoleHeight = "30%",
-        classBotPaneHeight = "70%",
-        classButtonStartY = 40, 
+        classGaugeHeight = 0, -- Default to 0, classes override this
+        classInfoHeight = 0,  -- Default to 0, classes override this
+        classConsoleHeight = "40%",
+        classBotPaneHeight = "60%",
+        classButtonStartY = 40,
     }
+
 }
 
 -- Apply defaults initially

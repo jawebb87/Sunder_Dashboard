@@ -1,36 +1,28 @@
 [
     {
-        "name": "ZevDash_Default_Config",
-        "isActive": "yes",
-        "isFolder": "no",
-        "scriptPath": "src/scripts/ZevDash_Default_Config.lua"
-    },
-    {
-        "name": "ZevDash_Custom_Config",
-        "isActive": "yes",
-        "isFolder": "no",
-        "scriptPath": "src/scripts/ZevDash_Custom_Config.lua"
-    },
-    {
-        "name": "ZevDash_GetResource",
-        "isActive": "yes",
-        "isFolder": "no",
-        "scriptPath": "src/scripts/ZevDash_GetResource.lua"
-    },
-    {
         "name": "ZevDash",
         "isActive": "yes",
-        "isFolder": "no"
+        "isFolder": "no",
+        "scriptPath": "src/scripts/ZevDash.lua"
+    },
+    {
+        "name": "configs",
+        "isActive": "yes",
+        "isFolder": "yes"
+    },
+    {
+        "name": "system",
+        "isActive": "yes",
+        "isFolder": "yes"
+    },
+    {
+        "name": "functions",
+        "isActive": "yes",
+        "isFolder": "yes"
     },
     {
         "name": "classes",
         "isActive": "yes",
         "isFolder": "yes"
-    },
-    {
-        "name": "ZevDash_Help",
-        "isActive": "yes",
-        "isFolder": "no",
-        "scriptPath": "src/scripts/ZevDash_Help.lua"
     }
 ]

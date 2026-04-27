@@ -46,6 +46,13 @@ function ZevDash.Wayfarer.axePulled()
     ZevDash.Wayfarer.refreshUI()
 end
 
+function ZevDash.Wayfarer.axeDropped()
+    -- It's no longer embedded, but it's NOT in our hand either
+    ZevDash.Wayfarer.axes_embedded = math.max(0, (ZevDash.Wayfarer.axes_embedded or 0) - 1)
+    -- Do NOT increment axes_held here!
+    ZevDash.Wayfarer.refreshUI()
+end
+
 function ZevDash.Wayfarer.axeFumbled()
     ZevDash.Wayfarer.axes_held = (ZevDash.Wayfarer.axes_held or 0) + 1
     ZevDash.Wayfarer.axes_air = math.max(0, (ZevDash.Wayfarer.axes_air or 0) - 1)
@@ -72,5 +79,6 @@ end
 -- Sunder Event Hooks for resets
 if not ZevDash.Wayfarer.deathHandler1 then
     ZevDash.Wayfarer.deathHandler1 = registerAnonymousEventHandler("SunderTargetDeath", "ZevDash.Wayfarer.resetEmbedded")
-    ZevDash.Wayfarer.deathHandler2 = registerAnonymousEventHandler("SunderBashingTargetDeath", "ZevDash.Wayfarer.resetEmbedded")
+    ZevDash.Wayfarer.deathHandler2 = registerAnonymousEventHandler("SunderBashingTargetDeath",
+        "ZevDash.Wayfarer.resetEmbedded")
 end

@@ -1,11 +1,14 @@
 {
   "packageName": "Sunder_Dashboard",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "Zev",
   "description": "Sunder Dashboard",
   "components": [
     "src/aliases/aliases.json",
     "src/scripts/scripts.json",
+    "src/scripts/configs/scripts.json",
+    "src/scripts/system/scripts.json",
+    "src/scripts/functions/scripts.json",
     "src/scripts/classes/scripts.json",
     "src/triggers/triggers.json"
   ]

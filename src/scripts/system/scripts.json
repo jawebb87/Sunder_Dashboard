@@ -1,0 +1,26 @@
+[
+    {
+        "name": "ZevDash_Engine",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/system/ZevDash_Engine.lua"
+    },
+    {
+        "name": "ZevDash_Render",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/system/ZevDash_Render.lua"
+    },
+    {
+        "name": "ZevDash_Persistence",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/system/ZevDash_Persistence.lua"
+    },
+    {
+        "name": "ZevDash_Build",
+        "isActive": "yes",
+        "isFolder": "no",
+        "scriptPath": "src/scripts/system/ZevDash_Build.lua"
+    }
+]

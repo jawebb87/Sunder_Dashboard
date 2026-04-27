@@ -1,6 +1,6 @@
 # Sunder Dashboard
 
-![Version](https://img.shields.io/badge/version-1.0.4-blue)
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
 ![Dependency](https://img.shields.io/badge/dependency-Sunder-green)
 ![Platform](https://img.shields.io/badge/platform-Mudlet-maroon)
 
@@ -58,7 +58,7 @@ You can customize the look and feel of your dashboard by editing `src/scripts/Ze
 
 ---
 
-**Created by Zev/Jacob Webb**
+**Created by Norrix/Zev/Jacob Webb**
 *Discord: zev7984*
 
 If you encounter any bugs or have feature suggestions, feel free to reach out!
