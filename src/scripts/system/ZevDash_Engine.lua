@@ -8,17 +8,17 @@ if not ZevDash_Engine_Init then
 
         ZevDash.BaseModule = {
             doAction = function(self, action_cmd)
-                if snd and snd.set_queue then snd.set_queue(action_cmd) else send(action_cmd) end
+                if snd and SunderSDK.api.queueCommand then SunderSDK.api.queueCommand(action_cmd) else send(action_cmd) end
             end,
             toggle = function(self, toggle_key)
                 ZevDash.class_toggles[toggle_key] = not ZevDash.class_toggles[toggle_key]
                 local state = ZevDash.class_toggles[toggle_key] and "ON" or "OFF"
-                if snd and snd.toggles and snd.toggles[toggle_key] ~= nil then
-                    snd.toggles[toggle_key] = not snd.toggles[toggle_key]
-                    if snd.save then snd.save() end
+                if snd and snd.toggles and SunderSDK.state.getToggleState(toggle_key) ~= nil then
+                    SunderSDK.state.getToggleState(toggle_key) = not SunderSDK.state.getToggleState(toggle_key)
+                    if SunderSDK.state.saveState then SunderSDK.state.saveState() end
                 else
                     local cmd = toggle_key:upper() .. " " .. state
-                    if snd and snd.set_queue then snd.set_queue(cmd) else send(cmd) end
+                    if snd and SunderSDK.api.queueCommand then SunderSDK.api.queueCommand(cmd) else send(cmd) end
                 end
                 ZevDash.displayPage("class")
             end,

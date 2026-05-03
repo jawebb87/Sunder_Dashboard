@@ -1,4 +1,5 @@
 -- ZevDash_zealot.lua
+SunderSDK.initialize()
 if not snd then return end
 
 ZevDash = ZevDash or {}
@@ -23,8 +24,8 @@ ZevDash.ClassModules["zealot"] = {
     end,
     
     doAction = function(action_cmd)
-        if snd and snd.set_queue then
-            snd.set_queue(action_cmd)
+        if snd and SunderSDK.api.queueCommand then
+            SunderSDK.api.queueCommand(action_cmd)
         else
             send(action_cmd)
         end
@@ -36,14 +37,14 @@ ZevDash.ClassModules["zealot"] = {
         
         local state = ZevDash.class_toggles[toggle_key] and "ON" or "OFF"
         
-        if snd and snd.toggles and snd.toggles[toggle_key] ~= nil then
-            snd.toggles[toggle_key] = not snd.toggles[toggle_key]
-            if snd.save then snd.save() end
+        if snd and snd.toggles and SunderSDK.state.getToggleState(toggle_key) ~= nil then
+            SunderSDK.state.getToggleState(toggle_key) = not SunderSDK.state.getToggleState(toggle_key)
+            if SunderSDK.state.saveState then SunderSDK.state.saveState() end
         else
             -- Direct command intercept for toggles not in Sunder natively
             local cmd = toggle_key:upper() .. " " .. state
-            if snd and snd.set_queue then
-                snd.set_queue(cmd)
+            if snd and SunderSDK.api.queueCommand then
+                SunderSDK.api.queueCommand(cmd)
             else
                 send(cmd)
             end

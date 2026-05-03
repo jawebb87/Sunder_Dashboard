@@ -4,6 +4,7 @@
 
 -- ZevDash.lua (The Bootloader)
 if not snd then return end
+SunderSDK.initialize()
 
 ZevDash = ZevDash or {}
 ZevDash.SunderReady = ZevDash.SunderReady or false
@@ -17,7 +18,7 @@ ZevDash.class_toggles = ZevDash.class_toggles or {}
 
 -- Listen for Sunder's Handshake
 if not ZevDash.initHandler then
-  ZevDash.initHandler = registerAnonymousEventHandler("sunder_login", function()
+  ZevDash.initHandler = SunderSDK.events.registerEventHandler("SunderSDKTablesReady", function()
     ZevDash.SunderReady = true
     
     -- Sync defense profiles in the background, but DO NOT build the UI!
