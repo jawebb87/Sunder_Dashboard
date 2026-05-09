@@ -1,10 +1,12 @@
 -- [[ SUNDER DASHBOARD ]] --
 -- Created by: Norrix/Zev/Jacob Webb (Discord Handle: zev7984) & Antigravity
--- Version: 1.1.0
+-- Version: 1.2.0
 
 -- ZevDash.lua (The Bootloader)
-if not snd then return end
-SunderSDK.initialize()
+-- This MUST run at load time even when `snd` doesn't exist yet.
+-- It initializes the global table and registers the Sunder handshake listener.
+-- Class files need ZevDash.ClassModules and ZevDash.registerClass to exist
+-- at load time, so we cannot bail early with `if not snd then return end`.
 
 ZevDash = ZevDash or {}
 ZevDash.SunderReady = ZevDash.SunderReady or false
@@ -24,7 +26,7 @@ ZevDash.class_toggles = ZevDash.class_toggles or {}
 
 -- Listen for Sunder's Handshake
 if not ZevDash.initHandler then
-  ZevDash.initHandler = SunderSDK.events.registerEventHandler("SunderSDKTablesReady", function()
+  ZevDash.initHandler = registerAnonymousEventHandler("sunder_login", function()
     ZevDash.SunderReady = true
     
     -- Sync defense profiles in the background, but DO NOT build the UI!

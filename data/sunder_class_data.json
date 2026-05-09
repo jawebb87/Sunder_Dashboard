@@ -1,0 +1,3910 @@
+{
+  "aetherial": {
+    "defenses": [
+      {
+        "id": "def_aetherial_bastion",
+        "name": "Aetherial Bastion",
+        "state": "on"
+      },
+      {
+        "id": "def_aetherial_presence",
+        "name": "Aetherial Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_aetherial_torment",
+        "name": "Aetherial Torment",
+        "state": "on"
+      },
+      {
+        "id": "def_aetherial_agility",
+        "name": "Aetherial Agility",
+        "state": "on"
+      },
+      {
+        "id": "def_aetherial_band_stored",
+        "name": "Aetherial Band Stored",
+        "state": "on"
+      }
+    ],
+    "skills": [],
+    "attacks": [
+      "Spark",
+      "Fireburst",
+      "Ashenfeet",
+      "Conflagrate",
+      "Pyroclast",
+      "Disintegrate",
+      "Direfrost",
+      "Pressurize",
+      "Thunderclap",
+      "Aeroblast",
+      "Branding",
+      "Singe",
+      "Retch",
+      "Twist",
+      "Disgorge",
+      "Acidveins",
+      "Obliteration",
+      "Frostbite",
+      "Equilibrium",
+      "Stupor",
+      "Synaptopathy",
+      "Frostblast"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "cast reflection",
+      "cast windlance",
+      "touch hammer",
+      "cast iceray",
+      "cast missiles"
+    ],
+    "special_mechanics": [
+      "Elemancy/Arcanism casting",
+      "Empowered boar/moon buffs"
+    ]
+  },
+  "akkari": {
+    "defenses": [
+      {
+        "id": "def_ardour_constitution",
+        "name": "Ardour Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_relentless",
+        "name": "Relentless",
+        "state": "on"
+      },
+      {
+        "id": "def_resolved",
+        "name": "Resolved",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_acuity",
+        "name": "Acuity",
+        "state": "on"
+      },
+      {
+        "id": "def_stalking",
+        "name": "Stalking",
+        "state": "on"
+      },
+      {
+        "id": "def_suppressed",
+        "name": "Suppressed",
+        "state": "on"
+      },
+      {
+        "id": "def_retaliation",
+        "name": "Retaliation",
+        "state": "on"
+      },
+      {
+        "id": "def_ascetic",
+        "name": "Ascetic",
+        "state": "on"
+      },
+      {
+        "id": "def_holylight",
+        "name": "Holylight",
+        "state": "on"
+      },
+      {
+        "id": "def_exaction",
+        "name": "Exaction",
+        "state": "on"
+      },
+      {
+        "id": "def_spiritbolster",
+        "name": "Spiritbolster",
+        "state": "on"
+      },
+      {
+        "id": "def_transcendence",
+        "name": "Transcendence",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Censure",
+      "Akkari",
+      "Fervor",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Frostblast",
+      "ague",
+      "bloodlet",
+      "corruption",
+      "denounce",
+      "disrupt",
+      "exhort",
+      "penitence",
+      "spirit anathema"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "vivify",
+      "spirit unbroken",
+      "denounce",
+      "lustrate corpse",
+      "denounce",
+      "touch hammer",
+      "denounce"
+    ],
+    "special_mechanics": [
+      "Fervor/Ivory combat modes",
+      "Blood rune mechanics",
+      "Rage resource"
+    ]
+  },
+  "alchemist": {
+    "defenses": [
+      {
+        "id": "def_interposition",
+        "name": "Interposition",
+        "state": "on"
+      },
+      {
+        "id": "def_obfuscation",
+        "name": "Obfuscation",
+        "state": "on"
+      },
+      {
+        "id": "def_cognisance",
+        "name": "Cognisance",
+        "state": "on"
+      },
+      {
+        "id": "def_resuscitation",
+        "name": "Resuscitation",
+        "state": "on"
+      },
+      {
+        "id": "def_conduit_crutch",
+        "name": "Conduit Crutch",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Obfuscation",
+      "Conduit",
+      "Experimentation",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Frostblast"
+    ],
+    "bash_commands": [
+      "order experiment passive",
+      "experiment recall",
+      "alchemy corrosive",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Conduit tracking",
+      "Experiment companion",
+      "Obfuscation mechanics"
+    ]
+  },
+  "archivist": {
+    "defenses": [
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_spheres",
+        "name": "Spheres",
+        "state": "on"
+      },
+      {
+        "id": "def_linked",
+        "name": "Linked",
+        "state": "on"
+      },
+      {
+        "id": "def_oneness",
+        "name": "Oneness",
+        "state": "on"
+      },
+      {
+        "id": "def_sublimation",
+        "name": "Sublimation",
+        "state": "on"
+      },
+      {
+        "id": "def_ameliorate",
+        "name": "Ameliorate",
+        "state": "on"
+      },
+      {
+        "id": "def_catabolism",
+        "name": "Catabolism",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Geometrics",
+      "Numerology",
+      "Bioessence",
+      "Cultivation",
+      "Enlightenment",
+      "Voidgazing"
+    ],
+    "attacks": [
+      "Advance",
+      "Affliction",
+      "Anger",
+      "Bestow",
+      "Circle",
+      "Disgust",
+      "Disorder",
+      "Emanation",
+      "Etch",
+      "Fear",
+      "Frostblast",
+      "Histrionics",
+      "Hoarfrost",
+      "Infection",
+      "Jolt",
+      "Joy",
+      "Judder",
+      "Kismet",
+      "Lemniscate",
+      "Madness",
+      "Matrix",
+      "Nexus",
+      "Pattern",
+      "Preserve",
+      "Recrudescence",
+      "Sonder",
+      "Triangle",
+      "Turmoil",
+      "circle",
+      "square",
+      "triangle"
+    ],
+    "bash_commands": [
+      "bio knitting",
+      "bio ethereal",
+      "touch shield",
+      "incite fork",
+      "touch hammer",
+      "incite crux",
+      "incite crux"
+    ],
+    "special_mechanics": [
+      "Sphere tracking",
+      "Shape combos (Geometrics)",
+      "Numerology"
+    ]
+  },
+  "ascendril": {
+    "defenses": [
+      {
+        "id": "def_countercurrent",
+        "name": "Countercurrent",
+        "state": "on"
+      },
+      {
+        "id": "def_empowered_boar",
+        "name": "Empowered Boar",
+        "state": "on"
+      },
+      {
+        "id": "def_arcaneskin",
+        "name": "Arcaneskin",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Elemancy",
+      "Arcanism",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Acidveins",
+      "Aeroblast",
+      "Ashenfeet",
+      "Branding",
+      "Conflagrate",
+      "Direfrost",
+      "Disgorge",
+      "Disintegrate",
+      "Equilibrium",
+      "Fireburst",
+      "Frostbite",
+      "Frostblast",
+      "Obliteration",
+      "Pressurize",
+      "Pyroclast",
+      "Retch",
+      "Singe",
+      "Spark",
+      "Stupor",
+      "Synaptopathy",
+      "Thunderclap",
+      "Twist"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "cast reflection",
+      "cast windlance",
+      "touch hammer",
+      "cast iceray",
+      "cast missiles"
+    ],
+    "special_mechanics": [
+      "Elemancy/Arcanism casting",
+      "Empowered boar/moon buffs"
+    ]
+  },
+  "astral": {
+    "defenses": [
+      {
+        "id": "def_astral_chaosspores",
+        "name": "Astral Chaosspores",
+        "state": "on"
+      },
+      {
+        "id": "def_astral_dreamtide_stored",
+        "name": "Astral Dreamtide Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_astral_presence",
+        "name": "Astral Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_astral_recursion",
+        "name": "Astral Recursion",
+        "state": "on"
+      },
+      {
+        "id": "def_astral_refulgence",
+        "name": "Astral Refulgence",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Astranomia",
+      "Crystalism",
+      "Ostension"
+    ],
+    "attacks": [
+      "Ray",
+      "Erode",
+      "Dustring",
+      "Gleam",
+      "Averroes",
+      "Eja",
+      "Vayua",
+      "Gulbedim",
+      "Ontesme",
+      "Edamil",
+      "Melot",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "astra erode",
+      "touch hammer",
+      "astra ray"
+    ],
+    "special_mechanics": [
+      "Astranomia crystals",
+      "Stargleam tracking",
+      "Ostension"
+    ]
+  },
+  "bard": {
+    "defenses": [
+      {
+        "id": "def_sheath",
+        "name": "Sheath",
+        "state": "on"
+      },
+      {
+        "id": "def_charisma",
+        "name": "Charisma",
+        "state": "on"
+      },
+      {
+        "id": "def_euphonia",
+        "name": "Euphonia",
+        "state": "on"
+      },
+      {
+        "id": "def_aurora",
+        "name": "Aurora",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Songcalling",
+      "Performance",
+      "Weaving"
+    ],
+    "attacks": [
+      "Frostblast",
+      "anelace",
+      "bladestorm",
+      "crackshot",
+      "globes",
+      "harry",
+      "headstitch",
+      "hiltblow",
+      "ironcollar"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "pierce",
+      "touch hammer",
+      "tempo"
+    ],
+    "special_mechanics": [
+      "Performance and Weaving skill combos",
+      "Emotional damage system"
+    ]
+  },
+  "bear": {
+    "defenses": [
+      {
+        "id": "def_weathering",
+        "name": "Weathering",
+        "state": "on"
+      },
+      {
+        "id": "def_bodyheat",
+        "name": "Bodyheat",
+        "state": "on"
+      },
+      {
+        "id": "def_metabolism",
+        "name": "Metabolism",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_thickhide",
+        "name": "Thickhide",
+        "state": "on"
+      },
+      {
+        "id": "def_bracing",
+        "name": "Bracing",
+        "state": "on"
+      },
+      {
+        "id": "def_hardening",
+        "name": "Hardening",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Ferality",
+      "Shapeshifting",
+      "Vocalizing"
+    ],
+    "attacks": [
+      "Ferocity"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "pounce",
+      "touch hammer",
+      "combo"
+    ],
+    "special_mechanics": [
+      "Shapeshifting forms (Bear/Wolf)",
+      "Ferality skills",
+      "Pack tactics"
+    ]
+  },
+  "bloodborn": {
+    "defenses": [
+      {
+        "id": "def_panoply",
+        "name": "Panoply",
+        "state": "on"
+      },
+      {
+        "id": "def_empowered_boar",
+        "name": "Empowered Boar",
+        "state": "on"
+      },
+      {
+        "id": "def_forestall",
+        "name": "Forestall",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Hematurgy",
+      "Esoterica",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Acidveins",
+      "Branding",
+      "Disgorge",
+      "Frostblast",
+      "Retch",
+      "Singe",
+      "Surfeit",
+      "Twist"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "unleash geminate",
+      "humour befoul",
+      "touch hammer",
+      "humour flense",
+      "unleash victimise"
+    ],
+    "special_mechanics": [
+      "Hematurgy mechanics",
+      "Humour system",
+      "Empowered boar buff"
+    ]
+  },
+  "carnifex": {
+    "defenses": [
+      {
+        "id": "def_fearless",
+        "name": "Fearless",
+        "state": "on"
+      },
+      {
+        "id": "def_reveling",
+        "name": "Reveling",
+        "state": "on"
+      },
+      {
+        "id": "def_reckless",
+        "name": "Reckless",
+        "state": "on"
+      },
+      {
+        "id": "def_soulharvest",
+        "name": "Soulharvest",
+        "state": "on"
+      },
+      {
+        "id": "def_soulthirst",
+        "name": "Soulthirst",
+        "state": "on"
+      },
+      {
+        "id": "def_soul_fortify",
+        "name": "Soul Fortify",
+        "state": "on"
+      },
+      {
+        "id": "def_soul_fracture",
+        "name": "Soul Fracture",
+        "state": "on"
+      },
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_cruelty",
+        "name": "Cruelty",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Savagery",
+      "Deathlore",
+      "Warhounds",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "acidspit",
+      "bite",
+      "contagion",
+      "firebreath",
+      "growl",
+      "mark",
+      "poisonclaw",
+      "hamstring"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "soul consume for health",
+      "pole razehack",
+      "pole raze",
+      "soul erode",
+      "touch hammer",
+      "pole spinslash"
+    ],
+    "special_mechanics": [
+      "Warhounds - summon and command hounds",
+      "Soul tracking - harvest and spend soul energy",
+      "Fury resource management"
+    ]
+  },
+  "chaos": {
+    "defenses": [
+      {
+        "id": "def_chaos_entropy",
+        "name": "Chaos Entropy",
+        "state": "on"
+      },
+      {
+        "id": "def_chaos_figment_stored",
+        "name": "Chaos Figment Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_chaos_fork",
+        "name": "Chaos Fork",
+        "state": "on"
+      },
+      {
+        "id": "def_chaos_presence",
+        "name": "Chaos Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_chaos_shroud",
+        "name": "Chaos Shroud",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Necromancy",
+      "Tarot",
+      "Domination",
+      "Hyalincuru",
+      "Contracts",
+      "Oneiromancy"
+    ],
+    "attacks": [
+      "Frostblast"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "fling priestess at me",
+      "touch hammer",
+      "flick bonedagger at",
+      "decay"
+    ],
+    "special_mechanics": [
+      "Tarot card tracking",
+      "Domination entities",
+      "Necromancy"
+    ]
+  },
+  "corruption": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_acid",
+        "name": "Adherent Acid",
+        "state": "on"
+      }
+    ],
+    "skills": [],
+    "attacks": [
+      "Lancing",
+      "Torment",
+      "Denial",
+      "Intensify",
+      "Bedevil",
+      "Branding",
+      "Redress",
+      "Boast",
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow",
+      "Swagger",
+      "Anklepin"
+    ],
+    "bash_commands": [
+      "invoke prolong me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Criticality resource"
+    ]
+  },
+  "earthcaller": {
+    "defenses": [
+      {
+        "id": "def_heatshield",
+        "name": "Heatshield",
+        "state": "on"
+      },
+      {
+        "id": "def_battlehymn",
+        "name": "Battlehymn",
+        "state": "on"
+      },
+      {
+        "id": "def_smothering",
+        "name": "Smothering",
+        "state": "on"
+      },
+      {
+        "id": "def_constitution",
+        "name": "Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_insulation",
+        "name": "Insulation",
+        "state": "on"
+      },
+      {
+        "id": "def_unbending",
+        "name": "Unbending",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Subjugation",
+      "Spirituality",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Aura",
+      "Brilliance",
+      "Chasten",
+      "Crash",
+      "Crush",
+      "Facesmash",
+      "Frostblast",
+      "Heatwave",
+      "Lambaste",
+      "Lightning",
+      "Overwhelm",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Transfixion",
+      "Warmth",
+      "beset",
+      "dirge hysteria",
+      "evoke transfixion",
+      "lambaste",
+      "perform dazzle",
+      "shield brilliance",
+      "shield facesmash",
+      "shield horrify"
+    ],
+    "bash_commands": [
+      "osso ribcage me",
+      "shield raze",
+      "touch hammer",
+      "tectonic ashfall",
+      "quash"
+    ],
+    "special_mechanics": [
+      "Dirge/Hymn mechanics",
+      "Shield tracking",
+      "Osso abilities"
+    ]
+  },
+  "executor": {
+    "defenses": [
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_bloodlust",
+        "name": "Bloodlust",
+        "state": "on"
+      },
+      {
+        "id": "def_girded",
+        "name": "Girded",
+        "state": "on"
+      },
+      {
+        "id": "def_stoicism",
+        "name": "Stoicism",
+        "state": "on"
+      },
+      {
+        "id": "def_concealed",
+        "name": "Concealed",
+        "state": "on"
+      },
+      {
+        "id": "def_deception",
+        "name": "Deception",
+        "state": "on"
+      },
+      {
+        "id": "def_vitality",
+        "name": "Vitality",
+        "state": "on"
+      },
+      {
+        "id": "def_limberness",
+        "name": "Limberness",
+        "state": "on"
+      },
+      {
+        "id": "def_bounding",
+        "name": "Bounding",
+        "state": "on"
+      },
+      {
+        "id": "def_efficiency",
+        "name": "Efficiency",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Weaponry",
+      "Fencing",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Attack",
+      "Frostblast",
+      "Shatter",
+      "accost",
+      "desolate",
+      "gambol",
+      "impair left leg",
+      "muddle",
+      "perplex",
+      "phlebotomise",
+      "rimestalker"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "ringblade dance",
+      "touch hammer",
+      "ringblade dance",
+      "ringblade dance",
+      "order loyals passive",
+      "quickwield both ringblade"
+    ],
+    "special_mechanics": [
+      "Ringblade combos",
+      "Accomplice tracking",
+      "Hound commands"
+    ]
+  },
+  "glacian": {
+    "defenses": [
+      {
+        "id": "def_glacian_penumbra",
+        "name": "Glacian Penumbra",
+        "state": "on"
+      },
+      {
+        "id": "def_glacian_presence",
+        "name": "Glacian Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_glacian_silhouette",
+        "name": "Glacian Silhouette",
+        "state": "on"
+      },
+      {
+        "id": "def_glacian_twilight",
+        "name": "Glacian Twilight",
+        "state": "on"
+      },
+      {
+        "id": "def_glacian_adumbration_stored",
+        "name": "Glacian Adumbration Stored",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Geometrics",
+      "Numerology",
+      "Bioessence",
+      "Cultivation",
+      "Enlightenment",
+      "Voidgazing"
+    ],
+    "attacks": [
+      "Recrudescence",
+      "Sonder",
+      "Histrionics",
+      "Emanation",
+      "Disgust",
+      "Joy",
+      "Fear",
+      "Etch",
+      "Anger",
+      "Turmoil",
+      "Disorder",
+      "Bestow",
+      "Kismet",
+      "Advance",
+      "Judder",
+      "Hoarfrost",
+      "circle",
+      "square",
+      "triangle"
+    ],
+    "bash_commands": [
+      "bio knitting",
+      "bio ethereal",
+      "touch shield",
+      "incite fork",
+      "touch hammer",
+      "incite crux",
+      "incite crux"
+    ],
+    "special_mechanics": [
+      "Sphere tracking",
+      "Shape combos (Geometrics)",
+      "Numerology"
+    ]
+  },
+  "indorani": {
+    "defenses": [
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_deathaura",
+        "name": "Deathaura",
+        "state": "on"
+      },
+      {
+        "id": "def_lifevision",
+        "name": "Lifevision",
+        "state": "on"
+      },
+      {
+        "id": "def_soulmask",
+        "name": "Soulmask",
+        "state": "on"
+      },
+      {
+        "id": "def_gravechill",
+        "name": "Gravechill",
+        "state": "on"
+      },
+      {
+        "id": "def_vengeance",
+        "name": "Vengeance",
+        "state": "on"
+      },
+      {
+        "id": "def_soulcage",
+        "name": "Soulcage",
+        "state": "on"
+      },
+      {
+        "id": "def_shroud",
+        "name": "Shroud",
+        "state": "on"
+      },
+      {
+        "id": "def_hierophant",
+        "name": "Hierophant",
+        "state": "on"
+      },
+      {
+        "id": "def_chariot",
+        "name": "Chariot",
+        "state": "on"
+      },
+      {
+        "id": "def_eclipse",
+        "name": "Eclipse",
+        "state": "on"
+      },
+      {
+        "id": "def_soulcage",
+        "name": "Soulcage",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Necromancy",
+      "Tarot",
+      "Domination",
+      "Hyalincuru",
+      "Contracts",
+      "Oneiromancy"
+    ],
+    "attacks": [
+      "Aeon",
+      "Belch",
+      "Chimera",
+      "Deform",
+      "Frostblast",
+      "Hangedman",
+      "Leech",
+      "Lovers",
+      "Moon",
+      "Screech",
+      "Shrivel",
+      "Slime",
+      "Sun"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "fling priestess at me",
+      "touch hammer",
+      "flick bonedagger at",
+      "decay"
+    ],
+    "special_mechanics": [
+      "Tarot card tracking",
+      "Domination entities",
+      "Necromancy"
+    ]
+  },
+  "infiltrator": {
+    "defenses": [
+      {
+        "id": "def_warding",
+        "name": "Warding",
+        "state": "on"
+      },
+      {
+        "id": "def_finesse",
+        "name": "Finesse",
+        "state": "on"
+      },
+      {
+        "id": "def_shadowsight",
+        "name": "Shadowsight",
+        "state": "on"
+      },
+      {
+        "id": "def_ghosted",
+        "name": "Ghosted",
+        "state": "on"
+      },
+      {
+        "id": "def_shroud",
+        "name": "Shroud",
+        "state": "on"
+      },
+      {
+        "id": "def_lipreading",
+        "name": "Lipreading",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Assassination",
+      "Subterfuge",
+      "Hypnosis"
+    ],
+    "attacks": [
+      "Aura",
+      "Chasten",
+      "Crash",
+      "Crush",
+      "Facesmash",
+      "Frostblast",
+      "Lambaste",
+      "Overwhelm",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "flay",
+      "touch hammer",
+      "backstab",
+      "quickwield left dirk",
+      "wield dirk",
+      "garrote",
+      "quickwield left whip"
+    ],
+    "special_mechanics": [
+      "Hypnosis tracking",
+      "Assassination combos",
+      "Shadow skills"
+    ]
+  },
+  "instinct": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_avengement",
+        "name": "Adherent Avengement",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Dhuriv",
+      "Woodlore",
+      "Tracking",
+      "Shadowdancing",
+      "Artifice",
+      "Subversion"
+    ],
+    "attacks": [
+      "Impale",
+      "Throatcrush",
+      "Gouge",
+      "Heartbreaker",
+      "Twirl",
+      "Trip",
+      "Flourish",
+      "Slash",
+      "Stab",
+      "Weaken",
+      "Crosscut",
+      "Reave",
+      "Slam",
+      "Blind",
+      "Slice",
+      "Thrust",
+      "Slit",
+      "Dualraze",
+      "Pierce",
+      "Sever",
+      "Daunt",
+      "Brutalise",
+      "Stifle",
+      "Muddle",
+      "Desolate",
+      "ambush",
+      "icewyrm"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "dhuriv combo",
+      "touch hammer",
+      "dhuriv combo",
+      "dhuriv combo",
+      "order loyals passive",
+      "quickwield both dhurive"
+    ],
+    "special_mechanics": [
+      "Dhuriv combo attacks",
+      "Animal companions - wolves and tracking",
+      "Trap deployment"
+    ]
+  },
+  "luminary": {
+    "defenses": [
+      {
+        "id": "def_lightshield",
+        "name": "Lightshield",
+        "state": "on"
+      },
+      {
+        "id": "def_inspiration",
+        "name": "Inspiration",
+        "state": "on"
+      },
+      {
+        "id": "def_fireblock",
+        "name": "Fireblock",
+        "state": "on"
+      },
+      {
+        "id": "def_constitution",
+        "name": "Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_insulation",
+        "name": "Insulation",
+        "state": "on"
+      },
+      {
+        "id": "def_boilingblood",
+        "name": "Boilingblood",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Spirituality",
+      "Devotion",
+      "Illumination",
+      "Tectonics",
+      "Apocalyptia",
+      "Subjugation"
+    ],
+    "attacks": [
+      "Aura",
+      "Brilliance",
+      "Chasten",
+      "Crash",
+      "Crush",
+      "Dazzle",
+      "Facesmash",
+      "Fire",
+      "Frostblast",
+      "Heatwave",
+      "Hellsight",
+      "Lambaste",
+      "Lightning",
+      "Overwhelm",
+      "Peace",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Shadow",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Transfixion",
+      "Warmth",
+      "beset",
+      "evoke transfixion",
+      "perform dazzle",
+      "shield brilliance",
+      "shield facesmash"
+    ],
+    "bash_commands": [
+      "angel aura me",
+      "shield raze",
+      "touch hammer",
+      "evoke lightning",
+      "smite"
+    ],
+    "special_mechanics": [
+      "Light/shield mechanics",
+      "Angel companion",
+      "Devotion skills"
+    ]
+  },
+  "malevolent": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_malevolence",
+        "name": "Adherent Malevolence",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Zeal",
+      "Purification",
+      "Psionics",
+      "Brutality",
+      "Ravaging",
+      "Egotism"
+    ],
+    "attacks": [
+      "Swagger",
+      "Anklepin",
+      "Jawcrack",
+      "Descent",
+      "Wristlash",
+      "Uprise",
+      "Blitz",
+      "Palmforce",
+      "Dislocate",
+      "Twinpress",
+      "Clawtwist",
+      "Pummel",
+      "Wanekick",
+      "Risekick",
+      "Edgekick",
+      "Sunkick",
+      "Direblow",
+      "Heelrush",
+      "Trammel",
+      "Heatspear",
+      "Scorch",
+      "Rejection",
+      "Quicken",
+      "Pendulum",
+      "Neutralise",
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow"
+    ],
+    "bash_commands": [
+      "enact cauterize me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Rage resource"
+    ]
+  },
+  "memory": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_ruination",
+        "name": "Adherent Ruination",
+        "state": "on"
+      }
+    ],
+    "skills": [],
+    "attacks": [
+      "Lancing",
+      "Torment",
+      "Denial",
+      "Intensify",
+      "Bedevil",
+      "Branding",
+      "Redress",
+      "Boast",
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow",
+      "Swagger",
+      "Anklepin"
+    ],
+    "bash_commands": [
+      "invoke prolong me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Criticality resource"
+    ]
+  },
+  "monk": {
+    "defenses": [
+      {
+        "id": "def_weathering",
+        "name": "Weathering",
+        "state": "on"
+      },
+      {
+        "id": "def_toughness",
+        "name": "Toughness",
+        "state": "on"
+      },
+      {
+        "id": "def_vitality",
+        "name": "Vitality",
+        "state": "on"
+      },
+      {
+        "id": "def_regeneration",
+        "name": "Regeneration",
+        "state": "on"
+      },
+      {
+        "id": "def_resistance",
+        "name": "Resistance",
+        "state": "on"
+      },
+      {
+        "id": "def_constitution",
+        "name": "Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_split_mind",
+        "name": "Split Mind",
+        "state": "on"
+      },
+      {
+        "id": "def_kaido_immunity",
+        "name": "Kaido Immunity",
+        "state": "on"
+      },
+      {
+        "id": "def_boosted_regen",
+        "name": "Boosted Regen",
+        "state": "on"
+      },
+      {
+        "id": "def_consciousness",
+        "name": "Consciousness",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Tekura",
+      "Kaido",
+      "Telepathy"
+    ],
+    "attacks": [
+      "Aura",
+      "Chasten",
+      "Confusion",
+      "Crash",
+      "Crush",
+      "Facesmash",
+      "Frostblast",
+      "Heatspear",
+      "Impatience",
+      "Lambaste",
+      "Mesmerize",
+      "Overwhelm",
+      "Paranoia",
+      "Pendulum",
+      "Punch",
+      "Quicken",
+      "Raze",
+      "Rejection",
+      "Scorch",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Whisper"
+    ],
+    "bash_commands": [
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Tekura combos",
+      "Kai resource",
+      "Telepathy afflictions"
+    ]
+  },
+  "nocturn": {
+    "defenses": [
+      {
+        "id": "def_nocturn_haze",
+        "name": "Nocturn Haze",
+        "state": "on"
+      },
+      {
+        "id": "def_nocturn_double",
+        "name": "Nocturn Double",
+        "state": "on"
+      },
+      {
+        "id": "def_nocturn_presence",
+        "name": "Nocturn Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_nocturn_bloodcoat",
+        "name": "Nocturn Bloodcoat",
+        "state": "on"
+      },
+      {
+        "id": "def_nocturn_shadow_stored",
+        "name": "Nocturn Shadow Stored",
+        "state": "on"
+      }
+    ],
+    "skills": [],
+    "attacks": [
+      "disgust",
+      "fear",
+      "joy"
+    ],
+    "bash_commands": [
+      "void alleviate",
+      "void disjoint",
+      "touch shield",
+      "foment anger",
+      "touch hammer",
+      "foment sadness",
+      "foment sadness"
+    ],
+    "special_mechanics": [
+      "Foment combos",
+      "Occultism tracking",
+      "Void abilities"
+    ]
+  },
+  "oneiromancer": {
+    "defenses": [
+      {
+        "id": "def_intoxication",
+        "name": "Intoxication",
+        "state": "on"
+      },
+      {
+        "id": "def_lifevision",
+        "name": "Lifevision",
+        "state": "on"
+      },
+      {
+        "id": "def_redoubt",
+        "name": "Redoubt",
+        "state": "on"
+      },
+      {
+        "id": "def_glaciation",
+        "name": "Glaciation",
+        "state": "on"
+      },
+      {
+        "id": "def_defiance",
+        "name": "Defiance",
+        "state": "on"
+      },
+      {
+        "id": "def_remembrance",
+        "name": "Remembrance",
+        "state": "on"
+      },
+      {
+        "id": "def_shroud",
+        "name": "Shroud",
+        "state": "on"
+      },
+      {
+        "id": "def_fan",
+        "name": "Fan",
+        "state": "on"
+      },
+      {
+        "id": "def_crane",
+        "name": "Crane",
+        "state": "on"
+      },
+      {
+        "id": "def_cloud",
+        "name": "Cloud",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Oneiromancy",
+      "Tarot",
+      "Domination",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Aeon",
+      "Chimera",
+      "Frostblast",
+      "Hangedman",
+      "Lovers",
+      "Moon",
+      "Slime",
+      "Sun"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "unfurl flower at me",
+      "touch hammer",
+      "starlight",
+      "impel athame at",
+      "starlight"
+    ],
+    "special_mechanics": [
+      "Tarot card tracking",
+      "Dream mechanics",
+      "Fae abilities"
+    ]
+  },
+  "praenomen": {
+    "defenses": [
+      {
+        "id": "def_potence_constitution",
+        "name": "Potence Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_fortify",
+        "name": "Fortify",
+        "state": "on"
+      },
+      {
+        "id": "def_corpus_warding",
+        "name": "Corpus Warding",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_lifescent",
+        "name": "Lifescent",
+        "state": "on"
+      },
+      {
+        "id": "def_lifevision",
+        "name": "Lifevision",
+        "state": "on"
+      },
+      {
+        "id": "def_stalking",
+        "name": "Stalking",
+        "state": "on"
+      },
+      {
+        "id": "def_concentrate",
+        "name": "Concentrate",
+        "state": "on"
+      },
+      {
+        "id": "def_shadowblow",
+        "name": "Shadowblow",
+        "state": "on"
+      },
+      {
+        "id": "def_blurred",
+        "name": "Blurred",
+        "state": "on"
+      },
+      {
+        "id": "def_elusion",
+        "name": "Elusion",
+        "state": "on"
+      },
+      {
+        "id": "def_trepidation",
+        "name": "Trepidation",
+        "state": "on"
+      },
+      {
+        "id": "def_bloodwisp",
+        "name": "Bloodwisp",
+        "state": "on"
+      },
+      {
+        "id": "def_strengthening",
+        "name": "Strengthening",
+        "state": "on"
+      },
+      {
+        "id": "def_insatiable",
+        "name": "Insatiable",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Corpus",
+      "Mentis",
+      "Sanguis",
+      "Ascendance",
+      "Dictum",
+      "Discipline",
+      "Extirpation",
+      "Caprice",
+      "Glamours"
+    ],
+    "attacks": [
+      "Agoraphobia",
+      "Anorexia",
+      "Bewitch",
+      "Clawing",
+      "Confusion",
+      "Curse",
+      "Deadbreath",
+      "Dementia",
+      "Epilepsy",
+      "Feast",
+      "Frenzy",
+      "Frostblast",
+      "Gash",
+      "Impatience",
+      "Imprecate",
+      "Indifference",
+      "Infatuation",
+      "Loneliness",
+      "Mania",
+      "Masochism",
+      "Mesmerize",
+      "Paranoia",
+      "Peace",
+      "Petrify",
+      "Poison",
+      "Psychosis",
+      "Reap",
+      "Reconstruct",
+      "Reknit",
+      "Rune",
+      "Slake",
+      "Snarl",
+      "Spew",
+      "Stupidity",
+      "Thrash",
+      "Vertigo",
+      "Whisper",
+      "Wound"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "mend",
+      "blood deluge",
+      "frenzy",
+      "drain corpse",
+      "frenzy",
+      "touch hammer",
+      "frenzy"
+    ],
+    "special_mechanics": [
+      "Corpus/Mentis/Sanguis skills",
+      "Blood tracking",
+      "Veil and Stalking modes"
+    ]
+  },
+  "predator": {
+    "defenses": [
+      {
+        "id": "def_spacing",
+        "name": "Spacing",
+        "state": "on"
+      },
+      {
+        "id": "def_bladesurge",
+        "name": "Bladesurge",
+        "state": "on"
+      },
+      {
+        "id": "def_regeneration",
+        "name": "Regeneration",
+        "state": "on"
+      },
+      {
+        "id": "def_secondwind",
+        "name": "Secondwind",
+        "state": "on"
+      },
+      {
+        "id": "def_windwalking",
+        "name": "Windwalking",
+        "state": "on"
+      },
+      {
+        "id": "def_preserval",
+        "name": "Preserval",
+        "state": "on"
+      },
+      {
+        "id": "def_whitesight",
+        "name": "Whitesight",
+        "state": "on"
+      },
+      {
+        "id": "def_culmination",
+        "name": "Culmination",
+        "state": "on"
+      },
+      {
+        "id": "def_closecombat",
+        "name": "Closecombat",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Knifeplay",
+      "Predation",
+      "Beastmastery"
+    ],
+    "attacks": [
+      "Aura",
+      "Bloodscourge",
+      "Facesmash",
+      "Feint",
+      "Frostblast",
+      "Goad",
+      "Lambaste",
+      "Mindnumb",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Veinrip"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "sitara raze",
+      "touch hammer",
+      "wolf flank"
+    ],
+    "special_mechanics": [
+      "Knifeplay combos",
+      "Beastmastery (wolves)",
+      "Sitara weapon"
+    ]
+  },
+  "ravager": {
+    "defenses": [
+      {
+        "id": "def_vinculum",
+        "name": "Vinculum",
+        "state": "on"
+      },
+      {
+        "id": "def_ruthlessness",
+        "name": "Ruthlessness",
+        "state": "on"
+      },
+      {
+        "id": "def_impenetrable",
+        "name": "Impenetrable",
+        "state": "on"
+      },
+      {
+        "id": "def_criticality",
+        "name": "Criticality",
+        "state": "on"
+      },
+      {
+        "id": "def_unfinished",
+        "name": "Unfinished",
+        "state": "on"
+      },
+      {
+        "id": "def_exhilarate",
+        "name": "Exhilarate",
+        "state": "on"
+      },
+      {
+        "id": "def_reflexes",
+        "name": "Reflexes",
+        "state": "on"
+      },
+      {
+        "id": "def_contempt",
+        "name": "Contempt",
+        "state": "on"
+      },
+      {
+        "id": "def_velocity",
+        "name": "Velocity",
+        "state": "on"
+      },
+      {
+        "id": "def_untouchable",
+        "name": "Untouchable",
+        "state": "on"
+      },
+      {
+        "id": "def_inflated",
+        "name": "Inflated",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Ravaging",
+      "Egotism",
+      "Brutality",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Anklepin",
+      "Aura",
+      "Bedevil",
+      "Boast",
+      "Branding",
+      "Brilliance",
+      "Chasten",
+      "Contempt",
+      "Crash",
+      "Crush",
+      "Dazzle",
+      "Denial",
+      "Deprival",
+      "Dread",
+      "Dull",
+      "Facesmash",
+      "Fire",
+      "Flog",
+      "Frostblast",
+      "Heatwave",
+      "Hellsight",
+      "Hobble",
+      "Intensify",
+      "Lambaste",
+      "Lancing",
+      "Lightning",
+      "Maim",
+      "Neutralise",
+      "Overwhelm",
+      "Peace",
+      "Punch",
+      "Raze",
+      "Redress",
+      "Sear",
+      "Shadow",
+      "Slug",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Swagger",
+      "Tether",
+      "Torment",
+      "Transfixion",
+      "Warmth"
+    ],
+    "bash_commands": [
+      "invoke prolong me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Criticality resource"
+    ]
+  },
+  "revenant": {
+    "defenses": [
+      {
+        "id": "def_gripping",
+        "name": "Gripping",
+        "state": "on"
+      },
+      {
+        "id": "def_maingauche",
+        "name": "Maingauche",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Reaving",
+      "Gestalt",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "rive",
+      "rivebash",
+      "fell",
+      "maingauche",
+      "dpl",
+      "flay",
+      "raze"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "raze",
+      "touch hammer",
+      "rivebash",
+      "fell",
+      "dpl",
+      "annul left"
+    ],
+    "special_mechanics": [
+      "Rive/bash combo system",
+      "Maingauche tracking"
+    ]
+  },
+  "runecarver": {
+    "defenses": [
+      {
+        "id": "def_prowess",
+        "name": "Prowess",
+        "state": "on"
+      },
+      {
+        "id": "def_hex_stalk",
+        "name": "Hex Stalk",
+        "state": "on"
+      },
+      {
+        "id": "def_hex_preservation",
+        "name": "Hex Preservation",
+        "state": "on"
+      },
+      {
+        "id": "def_ironbark",
+        "name": "Ironbark",
+        "state": "on"
+      },
+      {
+        "id": "def_empowered_moon",
+        "name": "Empowered Moon",
+        "state": "on"
+      },
+      {
+        "id": "def_rot_carpet",
+        "name": "Rot Carpet",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Runecarving",
+      "Hexes",
+      "Sporulation",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Aura",
+      "Bewitch",
+      "Facesmash",
+      "Frostblast",
+      "Lambaste",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip"
+    ],
+    "bash_commands": [
+      "runecarve branch",
+      "touch shield",
+      "hex imperil",
+      "touch hammer",
+      "hex enervate",
+      "spiritpact despair",
+      "hex malady"
+    ],
+    "special_mechanics": [
+      "Rune carving mechanics",
+      "Hex tracking",
+      "Spirit pact abilities"
+    ]
+  },
+  "sagani": {
+    "defenses": [
+      {
+        "id": "def_sagani_epicentre",
+        "name": "Sagani Epicentre",
+        "state": "on"
+      },
+      {
+        "id": "def_sagani_helix_stored",
+        "name": "Sagani Helix Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_sagani_presence",
+        "name": "Sagani Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_sagani_similitude",
+        "name": "Sagani Similitude",
+        "state": "on"
+      },
+      {
+        "id": "def_sagani_wall",
+        "name": "Sagani Wall",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Primality",
+      "Shamanism",
+      "Naturalism",
+      "Experimentation",
+      "Alchemy",
+      "Botany"
+    ],
+    "attacks": [
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste"
+    ],
+    "bash_commands": [
+      "order spirit passive",
+      "familiar recall",
+      "commune leafstorm",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Spirit companion tracking",
+      "Lifebloom/Warding",
+      "Vodun"
+    ]
+  },
+  "sciomancer": {
+    "defenses": [
+      {
+        "id": "def_rigor",
+        "name": "Rigor",
+        "state": "on"
+      },
+      {
+        "id": "def_shadow_engulf",
+        "name": "Shadow Engulf",
+        "state": "on"
+      },
+      {
+        "id": "def_shadow_mantle",
+        "name": "Shadow Mantle",
+        "state": "on"
+      },
+      {
+        "id": "def_blurring",
+        "name": "Blurring",
+        "state": "on"
+      },
+      {
+        "id": "def_empowered_moon",
+        "name": "Empowered Moon",
+        "state": "on"
+      },
+      {
+        "id": "def_featherstep",
+        "name": "Featherstep",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Sciomancy",
+      "Sorcery",
+      "Gravitation",
+      "Malediction",
+      "Runecarving",
+      "Sporulation"
+    ],
+    "attacks": [
+      "Anathemise",
+      "Chill",
+      "Degrade",
+      "Despair",
+      "Enervate",
+      "Ensnare",
+      "Erupt",
+      "Frostblast",
+      "Gloom",
+      "Grip",
+      "Hew",
+      "Imbue",
+      "Impede",
+      "Imperil",
+      "Infect",
+      "Inoculation",
+      "Jinx",
+      "Malady",
+      "Mystify",
+      "Numb",
+      "Preymark",
+      "Revile",
+      "Ruin",
+      "Scourge",
+      "Transfix",
+      "Woe"
+    ],
+    "bash_commands": [
+      "cast reflection",
+      "touch shield",
+      "cast hew",
+      "touch hammer",
+      "shadowprice gloom",
+      "cast fever"
+    ],
+    "special_mechanics": [
+      "Sciomancy/Sorcery casting",
+      "Shadow mechanics",
+      "Empowered moon buff"
+    ]
+  },
+  "sentinel": {
+    "defenses": [
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_lifesap",
+        "name": "Lifesap",
+        "state": "on"
+      },
+      {
+        "id": "def_barkskin",
+        "name": "Barkskin",
+        "state": "on"
+      },
+      {
+        "id": "def_hardiness",
+        "name": "Hardiness",
+        "state": "on"
+      },
+      {
+        "id": "def_concealed",
+        "name": "Concealed",
+        "state": "on"
+      },
+      {
+        "id": "def_masked_scent",
+        "name": "Masked Scent",
+        "state": "on"
+      },
+      {
+        "id": "def_vitality",
+        "name": "Vitality",
+        "state": "on"
+      },
+      {
+        "id": "def_flexibility",
+        "name": "Flexibility",
+        "state": "on"
+      },
+      {
+        "id": "def_foreststride",
+        "name": "Foreststride",
+        "state": "on"
+      },
+      {
+        "id": "def_alacrity",
+        "name": "Alacrity",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Dhuriv",
+      "Woodlore",
+      "Tracking",
+      "Shadowdancing",
+      "Artifice",
+      "Subversion"
+    ],
+    "attacks": [
+      "Blind",
+      "Brutalise",
+      "Crosscut",
+      "Daunt",
+      "Desolate",
+      "Dualraze",
+      "Flourish",
+      "Frostblast",
+      "Gouge",
+      "Heartbreaker",
+      "Icebreath",
+      "Impale",
+      "Muddle",
+      "Pierce",
+      "Reave",
+      "Sever",
+      "Slam",
+      "Slash",
+      "Slice",
+      "Slit",
+      "Stab",
+      "Stifle",
+      "Throatcrush",
+      "Thrust",
+      "Trip",
+      "Twirl",
+      "Weaken",
+      "ambush",
+      "icewyrm"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "dhuriv combo",
+      "touch hammer",
+      "dhuriv combo",
+      "dhuriv combo",
+      "order loyals passive",
+      "quickwield both dhurive"
+    ],
+    "special_mechanics": [
+      "Dhuriv combo attacks",
+      "Animal companions - wolves and tracking",
+      "Trap deployment"
+    ]
+  },
+  "seraph": {
+    "defenses": [
+      {
+        "id": "def_seraph_radiate",
+        "name": "Seraph Radiate",
+        "state": "on"
+      },
+      {
+        "id": "def_seraph_presence",
+        "name": "Seraph Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_seraph_corona_stored",
+        "name": "Seraph Corona Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_seraph_parhelion",
+        "name": "Seraph Parhelion",
+        "state": "on"
+      },
+      {
+        "id": "def_seraph_halo",
+        "name": "Seraph Halo",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Spirituality",
+      "Devotion",
+      "Illumination",
+      "Tectonics",
+      "Apocalyptia",
+      "Subjugation"
+    ],
+    "attacks": [
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Sear",
+      "Fire",
+      "Shadow",
+      "beset",
+      "evoke transfixion",
+      "perform dazzle",
+      "shield brilliance",
+      "shield facesmash"
+    ],
+    "bash_commands": [
+      "angel aura me",
+      "shield raze",
+      "touch hammer",
+      "evoke lightning",
+      "smite"
+    ],
+    "special_mechanics": [
+      "Light/shield mechanics",
+      "Angel companion",
+      "Devotion skills"
+    ]
+  },
+  "shaman": {
+    "defenses": [
+      {
+        "id": "def_lifevision",
+        "name": "Lifevision",
+        "state": "on"
+      },
+      {
+        "id": "def_spiritbond",
+        "name": "Spiritbond",
+        "state": "on"
+      },
+      {
+        "id": "def_protection",
+        "name": "Protection",
+        "state": "on"
+      },
+      {
+        "id": "def_shaman_spiritsight",
+        "name": "Shaman Spiritsight",
+        "state": "on"
+      },
+      {
+        "id": "def_lifebloom",
+        "name": "Lifebloom",
+        "state": "on"
+      },
+      {
+        "id": "def_shaman_warding",
+        "name": "Shaman Warding",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Primality",
+      "Shamanism",
+      "Naturalism",
+      "Experimentation",
+      "Alchemy",
+      "Botany"
+    ],
+    "attacks": [
+      "Aura",
+      "Chime",
+      "Clutch",
+      "Concuss",
+      "Divulgence",
+      "Facesmash",
+      "Frostblast",
+      "Infest",
+      "Lambaste",
+      "Omen",
+      "Overload",
+      "Premonition",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Slam",
+      "Smash",
+      "Spines",
+      "Squeeze",
+      "Strike",
+      "Strip",
+      "Trammel",
+      "Vitiate"
+    ],
+    "bash_commands": [
+      "order spirit passive",
+      "familiar recall",
+      "commune leafstorm",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Spirit companion tracking",
+      "Lifebloom/Warding",
+      "Vodun"
+    ]
+  },
+  "shapeshifter": {
+    "defenses": [
+      {
+        "id": "def_weathering",
+        "name": "Weathering",
+        "state": "on"
+      },
+      {
+        "id": "def_bodyheat",
+        "name": "Bodyheat",
+        "state": "on"
+      },
+      {
+        "id": "def_metabolism",
+        "name": "Metabolism",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_thickhide",
+        "name": "Thickhide",
+        "state": "on"
+      },
+      {
+        "id": "def_cornering",
+        "name": "Cornering",
+        "state": "on"
+      },
+      {
+        "id": "def_hardening",
+        "name": "Hardening",
+        "state": "on"
+      },
+      {
+        "id": "def_boneshaking",
+        "name": "Boneshaking",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Ferality",
+      "Shapeshifting",
+      "Vocalizing"
+    ],
+    "attacks": [
+      "Ferocity",
+      "Frostblast"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "pounce",
+      "touch hammer",
+      "combo"
+    ],
+    "special_mechanics": [
+      "Shapeshifting forms (Bear/Wolf)",
+      "Ferality skills",
+      "Pack tactics"
+    ]
+  },
+  "siderealist": {
+    "defenses": [
+      {
+        "id": "def_luminesce",
+        "name": "Luminesce",
+        "state": "on"
+      },
+      {
+        "id": "def_blueshift",
+        "name": "Blueshift",
+        "state": "on"
+      },
+      {
+        "id": "def_foresight",
+        "name": "Foresight",
+        "state": "on"
+      },
+      {
+        "id": "def_stargleam",
+        "name": "Stargleam",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Astranomia",
+      "Crystalism",
+      "Ostension"
+    ],
+    "attacks": [
+      "Aura",
+      "Averroes",
+      "Dustring",
+      "Edamil",
+      "Eja",
+      "Erode",
+      "Facesmash",
+      "Frostblast",
+      "Gleam",
+      "Gulbedim",
+      "Lambaste",
+      "Melot",
+      "Ontesme",
+      "Punch",
+      "Ray",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Vayua"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "astra erode",
+      "touch hammer",
+      "astra ray"
+    ],
+    "special_mechanics": [
+      "Astranomia crystals",
+      "Stargleam tracking",
+      "Ostension"
+    ]
+  },
+  "strife": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_turmoil",
+        "name": "Adherent Turmoil",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Zeal",
+      "Purification",
+      "Psionics",
+      "Brutality",
+      "Ravaging",
+      "Egotism"
+    ],
+    "attacks": [
+      "Swagger",
+      "Anklepin",
+      "Jawcrack",
+      "Descent",
+      "Wristlash",
+      "Uprise",
+      "Blitz",
+      "Palmforce",
+      "Dislocate",
+      "Twinpress",
+      "Clawtwist",
+      "Pummel",
+      "Wanekick",
+      "Risekick",
+      "Edgekick",
+      "Sunkick",
+      "Direblow",
+      "Heelrush",
+      "Trammel",
+      "Heatspear",
+      "Scorch",
+      "Rejection",
+      "Quicken",
+      "Pendulum",
+      "Neutralise",
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow"
+    ],
+    "bash_commands": [
+      "enact cauterize me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Rage resource"
+    ]
+  },
+  "sylvan": {
+    "defenses": [
+      {
+        "id": "def_thrive_constitution",
+        "name": "Thrive Constitution",
+        "state": "on"
+      },
+      {
+        "id": "def_indurated",
+        "name": "Indurated",
+        "state": "on"
+      },
+      {
+        "id": "def_persisted",
+        "name": "Persisted",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_bloodscent",
+        "name": "Bloodscent",
+        "state": "on"
+      },
+      {
+        "id": "def_lifevision",
+        "name": "Lifevision",
+        "state": "on"
+      },
+      {
+        "id": "def_stalking",
+        "name": "Stalking",
+        "state": "on"
+      },
+      {
+        "id": "def_abundance",
+        "name": "Abundance",
+        "state": "on"
+      },
+      {
+        "id": "def_redress",
+        "name": "Redress",
+        "state": "on"
+      },
+      {
+        "id": "def_concealing",
+        "name": "Concealing",
+        "state": "on"
+      },
+      {
+        "id": "def_veering",
+        "name": "Veering",
+        "state": "on"
+      },
+      {
+        "id": "def_awe",
+        "name": "Awe",
+        "state": "on"
+      },
+      {
+        "id": "def_bloodbath",
+        "name": "Bloodbath",
+        "state": "on"
+      },
+      {
+        "id": "def_favour",
+        "name": "Favour",
+        "state": "on"
+      },
+      {
+        "id": "def_wildfury",
+        "name": "Wildfury",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Woodlore",
+      "Swashbuckling",
+      "Fae",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Aura",
+      "Daunt",
+      "Facesmash",
+      "Frostblast",
+      "Icebreath",
+      "Lambaste",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "rejuvenation",
+      "fae inexorable",
+      "thrash",
+      "thrash",
+      "touch hammer",
+      "nutrify corpse",
+      "thrash"
+    ],
+    "special_mechanics": [
+      "Fae tracking",
+      "Thrive/Indurate/Persist defense system",
+      "Woodlore combos"
+    ]
+  },
+  "templar": {
+    "defenses": [
+      {
+        "id": "def_gripping",
+        "name": "Gripping",
+        "state": "on"
+      },
+      {
+        "id": "def_maingauche",
+        "name": "Maingauche",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Battlefury",
+      "Righteousness",
+      "Bladefire",
+      "Chirography",
+      "Riving",
+      "Manifestation"
+    ],
+    "attacks": [
+      "Anklepin",
+      "Aura",
+      "Blastwave",
+      "Brilliance",
+      "Contort",
+      "Dazzle",
+      "Descent",
+      "Disembowel",
+      "Doubleswing",
+      "Duality",
+      "Facesmash",
+      "Fire",
+      "Fitness",
+      "Frostblast",
+      "Heatwave",
+      "Hellsight",
+      "Iceblast",
+      "Impale",
+      "Jawcrack",
+      "Lambaste",
+      "Lightning",
+      "Peace",
+      "Punch",
+      "Rage",
+      "Raze",
+      "Razestrike",
+      "Rend",
+      "Sear",
+      "Shadow",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Swagger",
+      "Transfixion",
+      "Vorpal",
+      "Warmth",
+      "Withering",
+      "Wristlash"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "raze",
+      "touch hammer",
+      "strikebash",
+      "dsw",
+      "dsk",
+      "cleanse left"
+    ],
+    "special_mechanics": [
+      "Battlefury combos",
+      "Bladefire tracking",
+      "Dual strike system"
+    ]
+  },
+  "teradrim": {
+    "defenses": [
+      {
+        "id": "def_earthenform",
+        "name": "Earthenform",
+        "state": "on"
+      },
+      {
+        "id": "def_entwine",
+        "name": "Entwine",
+        "state": "on"
+      },
+      {
+        "id": "def_ricochet",
+        "name": "Ricochet",
+        "state": "on"
+      },
+      {
+        "id": "def_twinsoul",
+        "name": "Twinsoul",
+        "state": "on"
+      },
+      {
+        "id": "def_earth_resonance",
+        "name": "Earth Resonance",
+        "state": "on"
+      },
+      {
+        "id": "def_stonebind",
+        "name": "Stonebind",
+        "state": "on"
+      },
+      {
+        "id": "def_imbue_stonefury",
+        "name": "Imbue Stonefury",
+        "state": "on"
+      },
+      {
+        "id": "def_footfeel",
+        "name": "Footfeel",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Terramancy",
+      "Animation",
+      "Desiccation",
+      "Wavebreaking",
+      "Inundation",
+      "Synthesis"
+    ],
+    "attacks": [
+      "Batter",
+      "Curse",
+      "Facesmash",
+      "Grapple",
+      "Gutsmash",
+      "Heartpunch",
+      "Overhand",
+      "Rip",
+      "Scourge",
+      "Shield",
+      "Shockwave",
+      "Shout",
+      "Shred",
+      "Trap",
+      "Wrack"
+    ],
+    "bash_commands": [
+      "sand shield me",
+      "earth stoneblast",
+      "touch hammer",
+      "earth momentum",
+      "earth batter"
+    ],
+    "special_mechanics": [
+      "Earthen forms",
+      "Golem animation",
+      "Desiccation mechanics"
+    ]
+  },
+  "tiarna": {
+    "defenses": [
+      {
+        "id": "def_tiarna_bulwark",
+        "name": "Tiarna Bulwark",
+        "state": "on"
+      },
+      {
+        "id": "def_tiarna_ruin",
+        "name": "Tiarna Ruin",
+        "state": "on"
+      },
+      {
+        "id": "def_tiarna_presence",
+        "name": "Tiarna Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_tiarna_shelter_stored",
+        "name": "Tiarna Shelter Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_tiarna_chimerism",
+        "name": "Tiarna Chimerism",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Dhuriv",
+      "Woodlore",
+      "Tracking",
+      "Shadowdancing",
+      "Artifice",
+      "Subversion"
+    ],
+    "attacks": [
+      "Impale",
+      "Throatcrush",
+      "Gouge",
+      "Heartbreaker",
+      "Twirl",
+      "Trip",
+      "Flourish",
+      "Slash",
+      "Stab",
+      "Weaken",
+      "Crosscut",
+      "Reave",
+      "Slam",
+      "Blind",
+      "Slice",
+      "Thrust",
+      "Slit",
+      "Dualraze",
+      "Pierce",
+      "Sever",
+      "Daunt",
+      "Brutalise",
+      "Stifle",
+      "Muddle",
+      "Desolate",
+      "ambush",
+      "icewyrm"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "dhuriv combo",
+      "touch hammer",
+      "dhuriv combo",
+      "dhuriv combo",
+      "order loyals passive",
+      "quickwield both dhurive"
+    ],
+    "special_mechanics": [
+      "Dhuriv combo attacks",
+      "Animal companions - wolves and tracking",
+      "Trap deployment"
+    ]
+  },
+  "tidesage": {
+    "defenses": [
+      {
+        "id": "def_permafrost",
+        "name": "Permafrost",
+        "state": "on"
+      },
+      {
+        "id": "def_wavebreaking",
+        "name": "Wavebreaking",
+        "state": "on"
+      },
+      {
+        "id": "def_tideflux",
+        "name": "Tideflux",
+        "state": "on"
+      },
+      {
+        "id": "def_lifebond",
+        "name": "Lifebond",
+        "state": "on"
+      },
+      {
+        "id": "def_shore_leave",
+        "name": "Shore Leave",
+        "state": "on"
+      },
+      {
+        "id": "def_encrusted",
+        "name": "Encrusted",
+        "state": "on"
+      },
+      {
+        "id": "def_expose_rime",
+        "name": "Expose Rime",
+        "state": "on"
+      },
+      {
+        "id": "def_currents",
+        "name": "Currents",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Wavebreaking",
+      "Inundation",
+      "Enchantment",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Breach",
+      "Clobber",
+      "Crack",
+      "Crest",
+      "Feelers",
+      "Harden",
+      "Ram",
+      "Terrors",
+      "Undertow",
+      "Unseen"
+    ],
+    "bash_commands": [
+      "fog harden me",
+      "tide riptide",
+      "touch hammer",
+      "tide hightide",
+      "tide clobber"
+    ],
+    "special_mechanics": [
+      "Tide mechanics",
+      "Wavebreaking abilities",
+      "Permafrost tracking"
+    ]
+  },
+  "titan": {
+    "defenses": [
+      {
+        "id": "def_titan_disruption",
+        "name": "Titan Disruption",
+        "state": "on"
+      },
+      {
+        "id": "def_titan_irradiance",
+        "name": "Titan Irradiance",
+        "state": "on"
+      },
+      {
+        "id": "def_titan_multicore",
+        "name": "Titan Multicore",
+        "state": "on"
+      },
+      {
+        "id": "def_titan_presence",
+        "name": "Titan Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_titan_remnant_stored",
+        "name": "Titan Remnant Stored",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Battlefury",
+      "Righteousness",
+      "Bladefire",
+      "Chirography",
+      "Riving",
+      "Manifestation"
+    ],
+    "attacks": [
+      "Duality",
+      "Doubleswing",
+      "Rend",
+      "Rage",
+      "Fitness",
+      "Impale",
+      "Disembowel",
+      "Raze",
+      "Razestrike",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow",
+      "Swagger",
+      "Anklepin",
+      "Jawcrack",
+      "Descent",
+      "Wristlash"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "raze",
+      "touch hammer",
+      "strikebash",
+      "dsw",
+      "dsk",
+      "cleanse left"
+    ],
+    "special_mechanics": [
+      "Battlefury combos",
+      "Bladefire tracking",
+      "Dual strike system"
+    ]
+  },
+  "tyranny": {
+    "defenses": [
+      {
+        "id": "def_adherent_barrier",
+        "name": "Adherent Barrier",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_presence",
+        "name": "Adherent Presence",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_synchroneity",
+        "name": "Adherent Synchroneity",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_mortalfire_stored",
+        "name": "Adherent Mortalfire Stored",
+        "state": "on"
+      },
+      {
+        "id": "def_adherent_indomitable",
+        "name": "Adherent Indomitable",
+        "state": "on"
+      }
+    ],
+    "skills": [],
+    "attacks": [
+      "Lancing",
+      "Torment",
+      "Denial",
+      "Intensify",
+      "Bedevil",
+      "Branding",
+      "Redress",
+      "Boast",
+      "Crush",
+      "Crash",
+      "Smash",
+      "Aura",
+      "Sear",
+      "Strip",
+      "Raze",
+      "Chasten",
+      "Overwhelm",
+      "Strike",
+      "Punch",
+      "Facesmash",
+      "Lambaste",
+      "Brilliance",
+      "Dazzle",
+      "Peace",
+      "Hellsight",
+      "Warmth",
+      "Lightning",
+      "Transfixion",
+      "Heatwave",
+      "Fire",
+      "Shadow",
+      "Swagger",
+      "Anklepin"
+    ],
+    "bash_commands": [
+      "invoke prolong me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Criticality resource"
+    ]
+  },
+  "voidseer": {
+    "defenses": [
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_erudition",
+        "name": "Erudition",
+        "state": "on"
+      },
+      {
+        "id": "def_synergism",
+        "name": "Synergism",
+        "state": "on"
+      },
+      {
+        "id": "def_introspection",
+        "name": "Introspection",
+        "state": "on"
+      },
+      {
+        "id": "def_withstand",
+        "name": "Withstand",
+        "state": "on"
+      },
+      {
+        "id": "def_vitalise",
+        "name": "Vitalise",
+        "state": "on"
+      },
+      {
+        "id": "def_occultism",
+        "name": "Occultism",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Fomentation",
+      "Occultism",
+      "Voidgazing",
+      "Warding",
+      "Ancestry",
+      "Communion"
+    ],
+    "attacks": [
+      "Advance",
+      "Bestow",
+      "Hoarfrost",
+      "Judder",
+      "Kismet",
+      "disgust",
+      "fear",
+      "joy"
+    ],
+    "bash_commands": [
+      "void alleviate",
+      "void disjoint",
+      "touch shield",
+      "foment anger",
+      "touch hammer",
+      "foment sadness",
+      "foment sadness"
+    ],
+    "special_mechanics": [
+      "Foment combos",
+      "Occultism tracking",
+      "Void abilities"
+    ]
+  },
+  "warden": {
+    "defenses": [
+      {
+        "id": "def_fearless",
+        "name": "Fearless",
+        "state": "on"
+      },
+      {
+        "id": "def_initiative",
+        "name": "Initiative",
+        "state": "on"
+      },
+      {
+        "id": "def_battleflow",
+        "name": "Battleflow",
+        "state": "on"
+      },
+      {
+        "id": "def_victory",
+        "name": "Victory",
+        "state": "on"
+      },
+      {
+        "id": "def_displacement",
+        "name": "Displacement",
+        "state": "on"
+      },
+      {
+        "id": "def_ancestral_bolster",
+        "name": "Ancestral Bolster",
+        "state": "on"
+      },
+      {
+        "id": "def_invocation",
+        "name": "Invocation",
+        "state": "on"
+      },
+      {
+        "id": "def_irongrip",
+        "name": "Irongrip",
+        "state": "on"
+      },
+      {
+        "id": "def_intervention",
+        "name": "Intervention",
+        "state": "on"
+      },
+      {
+        "id": "def_shroud",
+        "name": "Shroud",
+        "state": "on"
+      },
+      {
+        "id": "def_homage",
+        "name": "Homage",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Ancestry",
+      "Warden",
+      "Enchantment",
+      "Warding",
+      "Ancestry2",
+      "Communion"
+    ],
+    "attacks": [
+      "Anklepin",
+      "Aura",
+      "Brilliance",
+      "Dazzle",
+      "Descent",
+      "Doubleswing",
+      "Duality",
+      "Facesmash",
+      "Fire",
+      "Fitness",
+      "Frostblast",
+      "Heatwave",
+      "Hellsight",
+      "Jawcrack",
+      "Lambaste",
+      "Lightning",
+      "Peace",
+      "Punch",
+      "Rage",
+      "Raze",
+      "Rend",
+      "Sear",
+      "Shadow",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Swagger",
+      "Transfixion",
+      "Warmth",
+      "Wristlash"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "ancest suffuse health",
+      "warden bypass",
+      "warden raze",
+      "ancest carve",
+      "touch hammer",
+      "warden lacerate",
+      "warden maul"
+    ],
+    "special_mechanics": [
+      "Ancestry tracking",
+      "Ancestor abilities",
+      "Battle mechanics"
+    ]
+  },
+  "wayfarer": {
+    "defenses": [
+      {
+        "id": "def_ironskin",
+        "name": "Ironskin",
+        "state": "on"
+      },
+      {
+        "id": "def_weathering",
+        "name": "Weathering",
+        "state": "on"
+      },
+      {
+        "id": "def_axe_obstruct",
+        "name": "Axe Obstruct",
+        "state": "on"
+      },
+      {
+        "id": "def_brutality",
+        "name": "Brutality",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Tenacity",
+      "Wayfaring",
+      "Fury"
+    ],
+    "attacks": [
+      "Anklepin",
+      "Aura",
+      "Descent",
+      "Facesmash",
+      "Frostblast",
+      "Jawcrack",
+      "Lambaste",
+      "Punch",
+      "Raze",
+      "Sear",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Swagger",
+      "Wristlash"
+    ],
+    "bash_commands": [
+      "fury sustain",
+      "touch shield",
+      "touch hammer",
+      "axe chop"
+    ],
+    "special_mechanics": [
+      "Battlechants - toggle active chants for buffs",
+      "Throwing axes - track thrown/embedded/dropped axes",
+      "Fury resource management"
+    ]
+  },
+  "wolf": {
+    "defenses": [
+      {
+        "id": "def_weathering",
+        "name": "Weathering",
+        "state": "on"
+      },
+      {
+        "id": "def_bodyheat",
+        "name": "Bodyheat",
+        "state": "on"
+      },
+      {
+        "id": "def_metabolism",
+        "name": "Metabolism",
+        "state": "on"
+      },
+      {
+        "id": "def_celerity",
+        "name": "Celerity",
+        "state": "on"
+      },
+      {
+        "id": "def_thickhide",
+        "name": "Thickhide",
+        "state": "on"
+      },
+      {
+        "id": "def_cornering",
+        "name": "Cornering",
+        "state": "on"
+      },
+      {
+        "id": "def_hardening",
+        "name": "Hardening",
+        "state": "on"
+      },
+      {
+        "id": "def_cloak",
+        "name": "Cloak",
+        "state": "on"
+      },
+      {
+        "id": "def_boneshaking",
+        "name": "Boneshaking",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Ferality",
+      "Shapeshifting",
+      "Vocalizing"
+    ],
+    "attacks": [
+      "Ferocity"
+    ],
+    "bash_commands": [
+      "touch shield",
+      "pounce",
+      "touch hammer",
+      "combo"
+    ],
+    "special_mechanics": [
+      "Shapeshifting forms (Bear/Wolf)",
+      "Ferality skills",
+      "Pack tactics"
+    ]
+  },
+  "zealot": {
+    "defenses": [
+      {
+        "id": "def_focalmark",
+        "name": "Focalmark",
+        "state": "on"
+      },
+      {
+        "id": "def_tempered_body",
+        "name": "Tempered Body",
+        "state": "on"
+      },
+      {
+        "id": "def_haste",
+        "name": "Haste",
+        "state": "on"
+      },
+      {
+        "id": "def_swagger",
+        "name": "Swagger",
+        "state": "on"
+      },
+      {
+        "id": "def_litheness",
+        "name": "Litheness",
+        "state": "on"
+      },
+      {
+        "id": "def_bending",
+        "name": "Bending",
+        "state": "on"
+      },
+      {
+        "id": "def_disunion",
+        "name": "Disunion",
+        "state": "on"
+      },
+      {
+        "id": "def_clarity",
+        "name": "Clarity",
+        "state": "on"
+      },
+      {
+        "id": "def_resurgence",
+        "name": "Resurgence",
+        "state": "on"
+      },
+      {
+        "id": "def_discharge",
+        "name": "Discharge",
+        "state": "on"
+      },
+      {
+        "id": "def_deflection",
+        "name": "Deflection",
+        "state": "on"
+      },
+      {
+        "id": "def_mindspark",
+        "name": "Mindspark",
+        "state": "on"
+      }
+    ],
+    "skills": [
+      "Zeal",
+      "Purification",
+      "Psionics",
+      "Brutality",
+      "Ravaging",
+      "Egotism"
+    ],
+    "attacks": [
+      "Anklepin",
+      "Aura",
+      "Blitz",
+      "Brilliance",
+      "Chasten",
+      "Clawtwist",
+      "Contempt",
+      "Crash",
+      "Crush",
+      "Dazzle",
+      "Deprival",
+      "Descent",
+      "Direblow",
+      "Dislocate",
+      "Dread",
+      "Dull",
+      "Edgekick",
+      "Facesmash",
+      "Fire",
+      "Flog",
+      "Frostblast",
+      "Heatspear",
+      "Heatwave",
+      "Heelrush",
+      "Hellsight",
+      "Hobble",
+      "Jawcrack",
+      "Lambaste",
+      "Lightning",
+      "Maim",
+      "Neutralise",
+      "Overwhelm",
+      "Palmforce",
+      "Peace",
+      "Pendulum",
+      "Pummel",
+      "Punch",
+      "Quicken",
+      "Raze",
+      "Rejection",
+      "Risekick",
+      "Scorch",
+      "Sear",
+      "Shadow",
+      "Slug",
+      "Smash",
+      "Strike",
+      "Strip",
+      "Sunkick",
+      "Swagger",
+      "Tether",
+      "Trammel",
+      "Transfixion",
+      "Twinpress",
+      "Uprise",
+      "Wanekick",
+      "Warmth",
+      "Wristlash"
+    ],
+    "bash_commands": [
+      "enact cauterize me",
+      "touch hammer"
+    ],
+    "special_mechanics": [
+      "Chain attacks - sequential combo system (Chain Maps)",
+      "Rage resource"
+    ]
+  }
+}
