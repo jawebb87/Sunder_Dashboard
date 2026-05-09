@@ -64,12 +64,19 @@ function ZevDash.renderCoreButtons()
         panacea = true
     }
 
-    -- DYNAMIC HIDE: Ignore actions that belong to the active Class Module
-    local currentClass = ZevDash.getCurrentClass()
-    local activeModule = ZevDash.ClassModules and ZevDash.ClassModules[currentClass]
-    if activeModule and activeModule.actions then
-        for _, act in ipairs(activeModule.actions) do
-            ignore_core[act.id] = true
+    -- DYNAMIC HIDE: Ignore toggles and actions claimed by any Class Module
+    if ZevDash.ClassModules then
+        for _, mod in pairs(ZevDash.ClassModules) do
+            if mod.toggles then
+                for _, tog in ipairs(mod.toggles) do
+                    ignore_core[tog.id:lower()] = true
+                end
+            end
+            if mod.actions then
+                for _, act in ipairs(mod.actions) do
+                    ignore_core[act.id:lower()] = true
+                end
+            end
         end
     end
 

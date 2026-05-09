@@ -46,5 +46,5 @@ luac.out
 build/
 .output
 bash_audit.txt
-Dash_autit.txt
+Dash_audit.txt
 .gitignore

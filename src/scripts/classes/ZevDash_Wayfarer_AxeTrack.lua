@@ -2,7 +2,6 @@
 -- Axe Tracking for Wayfarer Class
 -- Ported from Wayfarer_Addon
 
-if not snd then return end
 
 ZevDash = ZevDash or {}
 ZevDash.Wayfarer = ZevDash.Wayfarer or {}
