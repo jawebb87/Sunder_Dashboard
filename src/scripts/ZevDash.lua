@@ -9,7 +9,13 @@ SunderSDK.initialize()
 ZevDash = ZevDash or {}
 ZevDash.SunderReady = ZevDash.SunderReady or false
 ZevDash.profiles = ZevDash.profiles or {}
-ZevDash.save_file = getMudletHomeDir() .. "/ZevDash_Profiles_Community.lua"
+ZevDash.save_file = getMudletHomeDir() .. "/ZevDash_Profiles.lua"
+
+-- Migrate old Community save file if new one doesn't exist
+local _old_save = getMudletHomeDir() .. "/ZevDash_Profiles_Community.lua"
+if io.exists(_old_save) and not io.exists(ZevDash.save_file) then
+    os.rename(_old_save, ZevDash.save_file)
+end
 
 ZevDash.Layout = ZevDash.Layout or {}
 ZevDash.Styles = ZevDash.Styles or {}
@@ -27,6 +33,3 @@ if not ZevDash.initHandler then
     
   end)
 end
-
--- Broadcast that our core table exists
-raiseEvent("ZevDash_CoreInitialized")

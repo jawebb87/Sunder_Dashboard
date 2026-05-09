@@ -1,8 +1,6 @@
 -- ZevDash_executor.lua
-if not snd then return end
 
 ZevDash = ZevDash or {}
-ZevDash.ClassModules = ZevDash.ClassModules or {}
 ZevDash.class_toggles = ZevDash.class_toggles or {}
 
 ZevDash.registerClass("executor", {

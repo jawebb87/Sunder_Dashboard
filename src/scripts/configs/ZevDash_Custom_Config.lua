@@ -1,5 +1,5 @@
 -- ZevDash_Custom_Config.lua
--- Edit this file to customize your Wayfarer Dashboard settings.
+-- Edit this file to customize your Sunder Dashboard settings.
 -- This will override ZevDash_Default_Config.lua.
 
 if not snd then return end

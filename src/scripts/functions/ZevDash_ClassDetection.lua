@@ -1,5 +1,5 @@
 -- ZevDash_ClassDetection.lua
-if not snd then return end
+
 ZevDash = ZevDash or {}
 
 function ZevDash.getCurrentClass()

@@ -70,7 +70,7 @@ function ZevDash.build()
     }, ZevDash.col_def_tab)
 
     ZevDash.btn_class_tab = Geyser.Label:new({
-        name = "Class_Btn_ClassTab",
+        name = "ZevBtn_ClassTab",
         x = 0,
         y = 0,
         width = "100%",
@@ -228,7 +228,6 @@ function ZevDash.build()
             if ZevDash and ZevDash.applyDefLocks then
                 ZevDash.applyDefLocks()
             end
-            send("\n")
         end
         snd._zdash_load_locked = true
     end
@@ -264,6 +263,7 @@ function ZevDash.show()
     -- 4. LAZY LOAD: If this is the first time they hit smenu, build the UI
     if not ZevDash.is_built then
         ZevDash.build()
+        ZevDash.visible = true
         -- Tell the Render engine it's safe to draw the first page
         raiseEvent("ZevDash_UiBuilt")
     else

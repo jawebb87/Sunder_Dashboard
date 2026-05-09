@@ -1,5 +1,4 @@
 -- ZevDash_wayfarer.lua
-if not snd then return end
 
 ZevDash = ZevDash or {}
 ZevDash.class_toggles = ZevDash.class_toggles or {}
@@ -84,7 +83,7 @@ ZevDash.registerClass("wayfarer", {
         end
 
         -- UPDATE FURY GAUGE
-        local fury_val = tonumber(gmcp.Char.Vitals.Fury) or 0
+        local fury_val = (gmcp and gmcp.Char and gmcp.Char.Vitals and tonumber(gmcp.Char.Vitals.Fury)) or 0
         ZevDash.wayfarer_fury_gauge:setValue(fury_val, 100)
         ZevDash.wayfarer_fury_gauge:echo("<center>Fury: " .. fury_val .. "</center>")
 

@@ -3,20 +3,13 @@ SunderSDK.initialize()
 if not snd then return end
 
 ZevDash = ZevDash or {}
-ZevDash.ClassModules = ZevDash.ClassModules or {}
 ZevDash.class_toggles = ZevDash.class_toggles or {}
 
-ZevDash.ClassModules["zealot"] = {
+ZevDash.registerClass("zealot", {
     actions = {
     },
     toggles = {
     },
-    
-    renderInfo = function(mc)
-        mc:cecho("\n <white><u>ZEALOT DATA</u><reset>\n")
-        mc:cecho("<gray> " .. string.rep("-", 55) .. "\n")
-        
-        -- Action Tracking
 
         
         -- Action Tracking
@@ -51,11 +44,4 @@ ZevDash.ClassModules["zealot"] = {
         end
         ZevDash.displayPage("class")
     end,
-    
-    isToggleOn = function(key)
-        if snd and snd.toggles and snd.toggles[key] ~= nil then
-            return snd.toggles[key]
-        end
-        return ZevDash.class_toggles[key] or false
-    end
-}
+})
