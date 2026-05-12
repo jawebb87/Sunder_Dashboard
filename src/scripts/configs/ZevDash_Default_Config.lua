@@ -1,8 +1,6 @@
 -- ZevDash_Default_Config.lua
 -- Default configuration for Sunder Dashboard
 
-if not snd then return end
-
 local dashFont = getFont and getFont() or "Courier"
 local dashFontSize = getFontSize and getFontSize() or 9
 local fontStyle = "font-family: '" .. dashFont .. "'; font-size: " .. dashFontSize .. "pt;"

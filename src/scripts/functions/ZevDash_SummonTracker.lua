@@ -1,5 +1,4 @@
 -- ZevDash_SummonTracker.lua
-if not snd then return end
 ZevDash = ZevDash or {}
 ZevDash.tracked_entities = ZevDash.tracked_entities or {}
 

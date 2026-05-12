@@ -1,5 +1,4 @@
 -- ZevDash_Build.lua
-if not snd then return end
 ZevDash = ZevDash or {}
 
 -- NO premature event handlers here! We wait for the user to ask for the UI.

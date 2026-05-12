@@ -1,5 +1,4 @@
 -- ZevDash_Interactive.lua
-if not snd then return end
 ZevDash = ZevDash or {}
 
 function ZevDash.toggleDef(def_name)

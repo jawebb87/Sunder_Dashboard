@@ -1,5 +1,4 @@
 -- ZevDash_Render.lua
-if not snd then return end
 ZevDash = ZevDash or {}
 
 -- Wait for the UI to be built (which only happens on the first 'smenu' call)

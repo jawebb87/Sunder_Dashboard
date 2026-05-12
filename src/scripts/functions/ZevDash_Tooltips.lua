@@ -1,5 +1,4 @@
 -- ZevDash_Tooltips.lua
-if not snd then return end
 ZevDash = ZevDash or {}
 
 ZevDash.CoreTooltips = {
